@@ -1,80 +1,69 @@
 #include <iostream>
-#include <bitset>
-#include <Windows.h>
+#include <random>
 
-enum ItemOption
-{
-	Sell = 1<<16,
-	Drop = 1 <<8, 
-	Upgrade = 1
-};
+void FushArray(int* Array, int Count = 0);
 
 int main(void)
 {
-	unsigned char Property = 0; //1바이트
+	int RandomTestArray[5] = {};
 
-	unsigned char bIsSell = 0;
+	for (int & ArrayNum : RandomTestArray)
+	{
+		std::random_device rd;
+		ArrayNum = (rd() % 100);
+	}
 
-	unsigned char bIsDroped = 0;
+	//역순 출력하기
 
-	unsigned char bIsUpgrade = 1;
+	/*for (int i = sizeof(RandomTestArray) / sizeof(int); i > 0; i--)
+	{
+		std::cout << RandomTestArray[i -1] << ' ';
+	}*/
 
-	//std::cin >> bIsSell >> bIsDroped >> bIsUpgrade;
+	//평균 값 구하기
 
-	int Result = 0;
+	/*int Sum = 0;
+	for (int& ArrayNum : RandomTestArray)
+	{
+		Sum += ArrayNum;
+	}
 
-	/*Property = bIsSell << 2 | bIsDroped << 1 | bIsUpgrade;
+	std::cout << "평균 값 : " << (double)Sum / (sizeof(RandomTestArray) / sizeof(int));*/
 
-	if ((Property & 0b00000100) >= 0b00000100)
-		std::cout << "판매 가능한 상품\n";
-	else
-		std::cout << "판매 불가 상품\n";
+	//최소 최대 구하기
 
-	if ((Property & 0b00000010) >= 0b00000010)
-		std::cout << "드랍 가능한 상품\n";
-	else
-		std::cout << "드랍 불가 상품\n";
+	int RangeIndex[5] = {-1, -1, -1, -1, -1};
 
-	if ((Property & 0b00000001) >= 0b00000001)
-		std::cout << "강화 가능한 상품\n";
-	else
-		std::cout << "강화 불가 상품\n";*/
+	for (int i = 0; i < sizeof(RandomTestArray) / sizeof(int); i++)
+	{
+		int biggestIndex = 0;
+		for (int& TempNum : RangeIndex)
+		{
+			if (RandomTestArray[i] > TempNum)
+			{
+				FushArray(RangeIndex, biggestIndex);
+				/*{
+					if (RangeIndex[biggestIndex + 1] != -1)
+					{
+						RangeIndex[biggestIndex + 2] = RangeIndex[biggestIndex + 1];
+					}
+					RangeIndex[biggestIndex + 1] = RangeIndex[biggestIndex];
+				}*/
+				RangeIndex[biggestIndex] = RandomTestArray[i];
+				break;
+			}
+			biggestIndex++;
+		}
+	}
+}
 
+void FushArray(int* Array, int Count)
+{
+	if (Array[Count] == -1)
+		return;
 
-	Result = bIsSell << 16 | bIsDroped << 8 | bIsUpgrade;
-
-	////0b00000000000000010000000100000001
-	//if ( (Result & 0b00000000000000010000000000000000) >= 0b00000000000000010000000000000000)
-	//	std::cout << "판매 가능한 상품\n";
-	//else
-	//	std::cout << "판매 불가 상품\n";
-
-	//if ((Result & 0b00000000000000000000000100000001) >= 0b00000000000000000000000100000001)
-	//	std::cout << "드랍 가능한 상품\n";
-	//else
-	//	std::cout << "드랍 불가 상품\n";
-
-	//if ((Result & 0b00000000000000000000000000000001) >= 0b00000000000000000000000000000001)
-	//	std::cout << "강화 가능한 상품\n";
-	//else
-	//	std::cout << "강화 불가 상품\n";
-
-
-	if ((Result & ItemOption::Sell))
-		std::cout << "판매 가능한 상품\n";
-	else
-		std::cout << "판매 불가 상품\n";
-
-	if ((Result & 256))
-		std::cout << "드랍 가능한 상품\n";
-	else
-		std::cout << "드랍 불가 상품\n";
-
-	if ((Result & 1))
-		std::cout << "강화 가능한 상품\n";
-	else
-		std::cout << "강화 불가 상품\n";
-
-
-	return 0;
+	int Temp = Array[Count];
+	Array[Count + 1] = Array[Count];
+	Count++;
+	FushArray(Array, Count);
 }

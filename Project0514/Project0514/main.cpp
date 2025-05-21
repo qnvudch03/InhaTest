@@ -9,10 +9,13 @@
 
 using namespace std;
 
+#define MONSTER_COUNT 5
 
 
-void StartFight(Player& Youser, Monster& Enemy);
+
+bool StartFight(Player& Youser, Monster& Enemy);
 int GoToBattleFiled();
+void MonsterApear(Monster Enemy);
 
 int main(void)
 {
@@ -24,10 +27,9 @@ int main(void)
 	5. 3번만 공격 가능
 	*/
 
-
 	Player Youser;
 
-	SetClass(Youser);
+	SetPlayerClass(Youser);
 
 	std::string TempName = "(String)전사";
 	int pointersize = sizeof(TempName);
@@ -46,12 +48,16 @@ int main(void)
 
 		if (InSelectMenu == 1)
 		{
-			Monster Enemy;
+			Monster EnemyArray[MONSTER_COUNT];
+
 			int bIsBattle = 0;
+			int MonsterIndex = 0;
+
 			while (true)
 			{
-				Enemy = SpawnMonster();
-				cout << "1. 싸운다.\n2. 도망간다.\n3. 마을로 복귀\n";
+				EnemyArray[MonsterIndex] = SpawnMonster();
+				//cout << "1. 싸운다.\n2. 도망간다.\n3. 마을로 복귀\n";
+				cout << "1. 싸운다.\n2. 도망간다.\n";
 
 				bIsBattle = 0;
 				cout << ">>";
@@ -64,10 +70,42 @@ int main(void)
 
 			if (bIsBattle == 1)
 			{
-				StartFight(Youser, Enemy);
+				bool bIsStageClear = true;
+				//전투 for 문
+				for (int BattleCount = 0; BattleCount < MONSTER_COUNT; BattleCount++)
+				{
+					//다음 처치할 몬스터 생성
+					if (EnemyArray[BattleCount].HP == 0)
+					{
+						EnemyArray[BattleCount] = SpawnMonster();
+					}
+					
+					//전투에서 생존시 다음전투로
+					if (StartFight(Youser, EnemyArray[BattleCount]))
+					{
+						Sleep(2000);
+					}
 
+					//전투중 사망시 전투 탈출
+					else
+					{
+						bIsStageClear = false;
+						break;
+					}
+				}
+				
 				{
 					int tempNum = 0;
+
+					if (bIsStageClear)
+					{
+						cout << "\n\n---던젼 탐험 클리어---\n";
+					}
+					else
+					{
+						cout << "\n\n---던젼 탐헝 실패---\n";
+					}
+
 					cout << "\n\nPress Any Key To Continue --> (0)\n";
 					cin >> tempNum;
 					system("cls");
@@ -78,12 +116,13 @@ int main(void)
 			{
 				continue;
 			}
+
 			
 		}
 			
 
 		else if (InSelectMenu == 2)
-			SetClass(Youser);
+			SetPlayerClass(Youser);
 
 		else if (InSelectMenu == 3)
 			break;
@@ -93,7 +132,7 @@ int main(void)
 	cout << "\n----------End Game----------";	
 }
 
-void StartFight(Player& Youser, Monster& Enemy)
+bool StartFight(Player& Youser, Monster& Enemy)
 {
 	int ChanceCount = 3;
 	int MosterHP = Enemy.HP;
@@ -158,9 +197,10 @@ void StartFight(Player& Youser, Monster& Enemy)
 				int CurrentGold = (OriginGold - Enemy.Deposit < 0) ? 0 : OriginGold - Enemy.Deposit;
 				cout << "\n토벌 실패 : [ 잔여 몬스터 HP  " << MosterHP << "]" << "\n";
 				cout << "[ 소지금  " << OriginGold << "  ->  " << CurrentGold << " ]\n";
-				Youser.PlayerInformation.Deposit = (Youser.PlayerInformation.Deposit < 0) ? 0 : Youser.PlayerInformation.Deposit;
+				Youser.PlayerInformation.Deposit = CurrentGold;
+				return false;
 
-
+				//아이템 사용 기능이 있었을떄의 기능
 				/*if (UseItem != 0)
 				{
 					cout << "아이템을 사용하시겠습니까??  <Yes : 1> / <No : 0>\n";
@@ -199,6 +239,8 @@ void StartFight(Player& Youser, Monster& Enemy)
 
 		}
 	}
+
+	return true;
 }
 
 
@@ -212,6 +254,11 @@ int GoToBattleFiled()
 	cin >> bIsBattle;
 
 	return bIsBattle;
+}
+
+void MonsterApear(Monster Enemy)
+{
+	std::cout << "\n-----["<<Enemy.MonsterName<<"]이(가) 출현하였습니다-----\n";
 }
 
 

@@ -3,7 +3,7 @@
 
 using namespace std;
 
-int SetClass(Player& Youser)
+int SetPlayerClass(Player& Youser)
 {
 	int WoriarClasses = 0;
 

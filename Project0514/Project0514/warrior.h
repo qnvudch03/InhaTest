@@ -19,4 +19,4 @@ enum WorialClass
 	axe
 };
 
-int SetClass(Player& Youser);
+int SetPlayerClass(Player& Youser);
