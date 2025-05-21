@@ -29,9 +29,15 @@ int main(void)
 
 	SetClass(Youser);
 
+	std::string TempName = "(String)전사";
+	int pointersize = sizeof(TempName);
+	int Valusize = sizeof(&TempName);
+	//std::string TempName2 = TEXT("스트링");
+
 	while (true)
 	{
 		cout << "\n---메뉴---\n";
+		cout << "[ 보유골드 - " << Youser.PlayerInformation.Deposit << "G ]\n\n";
 		cout << "1. 던전 입장\n2. 캐릭터 선택\n3. 종료\n";
 
 		int InSelectMenu = 0;
@@ -62,7 +68,7 @@ int main(void)
 
 				{
 					int tempNum = 0;
-					cout << "Press Any Key To Continue --> (0)\n";
+					cout << "\n\nPress Any Key To Continue --> (0)\n";
 					cin >> tempNum;
 					system("cls");
 				}
@@ -91,7 +97,7 @@ void StartFight(Player& Youser, Monster& Enemy)
 {
 	int ChanceCount = 3;
 	int MosterHP = Enemy.HP;
-	int PlayerHP = Youser.HP;
+	int PlayerHP = Youser.PlayerInformation.CurrentHP;
 	int UseItem = 1;
 
 	while (ChanceCount > 0)
@@ -128,7 +134,7 @@ void StartFight(Player& Youser, Monster& Enemy)
 			}
 
 			MosterHP = (MosterHP < 0) ? 0 : MosterHP;
-			cout << "[ 몬스터 HP : " << MosterHP << " ]\n";
+			cout <<"[ " <<Enemy.MonsterName << " HP : " << MosterHP << " ]\n";
 
 		}
 		else
@@ -139,16 +145,21 @@ void StartFight(Player& Youser, Monster& Enemy)
 				PlayerHP = 0;
 
 			cout << "실패!\n";
-			cout << "몬스터의 공격 : " << "- "<<Enemy.ATK << '\n';
-			cout << "[ 용병 HP : " << PlayerHP << " ]\n";
-			cout << "[ 몬스터 HP : " << MosterHP << " ]\n";
+			cout << Enemy.MonsterName<<"(의) 공격 : " << "- "<<Enemy.ATK << '\n';
+			cout << "[ " << Youser.ClassName << " HP : " << PlayerHP << " ]\n";
+			cout << "[ " << Enemy.MonsterName << " HP : " << MosterHP << " ]\n";
 		}
 
 		if (ChanceCount == 0 || MosterHP <= 0 || PlayerHP <= 0)
 		{
 			if (MosterHP > 0)
 			{
+				int OriginGold = Youser.PlayerInformation.Deposit;
+				int CurrentGold = (OriginGold - Enemy.Deposit < 0) ? 0 : OriginGold - Enemy.Deposit;
 				cout << "\n토벌 실패 : [ 잔여 몬스터 HP  " << MosterHP << "]" << "\n";
+				cout << "[ 소지금  " << OriginGold << "  ->  " << CurrentGold << " ]\n";
+				Youser.PlayerInformation.Deposit = (Youser.PlayerInformation.Deposit < 0) ? 0 : Youser.PlayerInformation.Deposit;
+
 
 				/*if (UseItem != 0)
 				{
@@ -178,7 +189,8 @@ void StartFight(Player& Youser, Monster& Enemy)
 			{
 				cout << "☆★토벌 성공!!★☆\n\n";
 				cout << "[보상]\n";
-
+				cout << "[사냥골드] : " << Enemy.Deposit << " G\n";
+				Youser.PlayerInformation.Deposit += Enemy.Deposit;
 				int ReWord = GetHuntReword();
 				PrintItemOption(ReWord);
 

@@ -1,10 +1,14 @@
 #pragma once
 
+#include "Player.h"
+
 struct Player
 {
+	PlayerInfo PlayerInformation;
 	int Power = 0;
-	int HP = 0;
 	float CriticalRate = 0.0f;
+	const char* ClassName = nullptr;
+	//std::string ClassNameString;
 	int Acurate = 0;
 };
 

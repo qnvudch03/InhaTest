@@ -20,25 +20,31 @@ int SetClass(Player& Youser)
 	{
 	case WorialClass::warrior:
 		Youser.Power = 55;
-		Youser.CriticalRate = 0.25;
+		Youser.CriticalRate = 0.25f;
 		Youser.Acurate = 9;
-		Youser.HP = 200;
+		Youser.PlayerInformation.CurrentHP = 150;
+		Youser.ClassName = "전사";
+		//Youser.ClassNameString = "String전사";
 		cout << "\n당신의 직업은 : '전사' 입니다.\n";
 		break;
 
 	case WorialClass::archor:
 		Youser.Power = 45;
-		Youser.CriticalRate = 0.7;
+		Youser.CriticalRate = 0.7f;
 		Youser.Acurate = 7;
-		Youser.HP = 100;
+		Youser.PlayerInformation.CurrentHP = 50;
+		Youser.ClassName = "궁수";
+		//Youser.ClassNameString = "String궁수";
 		cout << "\n당신의 직업은 : '궁수' 입니다.\n";
 		break;
 
 	case WorialClass::axe:
 		Youser.Power = 70;
-		Youser.CriticalRate = 0.2;
+		Youser.CriticalRate = 0.2f;
 		Youser.Acurate = 4;
-		Youser.HP = 120;
+		Youser.PlayerInformation.CurrentHP = 70;
+		Youser.ClassName = "광전사";
+		//Youser.ClassNameString = "String광전사";
 		cout << "\n당신의 직업은 : '광전사' 입니다.\n";
 		break;
 	default:
