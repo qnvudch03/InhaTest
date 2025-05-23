@@ -3,36 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\inha\\source\\repos\\Project0514\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}|PushGame\\PushGame.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Helper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}|PushGame\\PushGame.vcxproj|solutionrelative:PushGame\\Helper.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\Monster.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}|PushGame\\PushGame.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Helper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}|PushGame\\PushGame.vcxproj|solutionrelative:PushGame\\Helper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}|PushGame\\PushGame.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\PushPush.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}|PushGame\\PushGame.vcxproj|solutionrelative:PushGame\\PushPush.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}|PushGame\\PushGame.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Position.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}|PushGame\\PushGame.vcxproj|solutionrelative:PushGame\\Position.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\Monster.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}|PushGame\\PushGame.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}|PushGame\\PushGame.vcxproj|solutionrelative:PushGame\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\TestSheet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\TestSheet.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}|PushGame\\PushGame.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}|PushGame\\PushGame.vcxproj|solutionrelative:PushGame\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\warrior.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\warrior.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\warrior.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\warrior.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}|PushGame\\PushGame.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}|PushGame\\PushGame.vcxproj|solutionrelative:PushGame\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,106 +42,93 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TestSheet.cpp",
-              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\TestSheet.cpp",
-              "RelativeDocumentMoniker": "Project0514\\TestSheet.cpp",
-              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\TestSheet.cpp",
-              "RelativeToolTip": "Project0514\\TestSheet.cpp",
-              "ViewState": "AgIAACMAAAAAAAAAAAD4vysAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-21T05:01:35.493Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Player.cpp",
-              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Player.cpp",
-              "RelativeDocumentMoniker": "Project0514\\Player.cpp",
-              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Player.cpp",
-              "RelativeToolTip": "Project0514\\Player.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAATAAAAAAAAAA==",
+              "Title": "PushPush.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\PushPush.cpp",
+              "RelativeDocumentMoniker": "PushGame\\PushPush.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\PushPush.cpp",
+              "RelativeToolTip": "PushGame\\PushPush.cpp",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAHgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-21T02:54:35.136Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Player.h",
-              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Player.h",
-              "RelativeDocumentMoniker": "Project0514\\Player.h",
-              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Player.h",
-              "RelativeToolTip": "Project0514\\Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-21T02:54:24.722Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "main.cpp",
-              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\main.cpp",
-              "RelativeDocumentMoniker": "Project0514\\main.cpp",
-              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\main.cpp",
-              "RelativeToolTip": "Project0514\\main.cpp",
-              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFwAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-15T05:22:23.442Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Monster.cpp",
-              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Monster.cpp",
-              "RelativeDocumentMoniker": "Project0514\\Monster.cpp",
-              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Monster.cpp",
-              "RelativeToolTip": "Project0514\\Monster.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-20T01:41:41.782Z",
+              "WhenOpened": "2025-05-22T06:36:01.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Monster.h",
-              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Monster.h",
-              "RelativeDocumentMoniker": "Project0514\\Monster.h",
-              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Monster.h",
-              "RelativeToolTip": "Project0514\\Monster.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAMAAAAAAAAAA==",
+              "Title": "Map.h",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Map.h",
+              "RelativeDocumentMoniker": "PushGame\\Map.h",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Map.h",
+              "RelativeToolTip": "PushGame\\Map.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-20T01:41:25.022Z",
+              "WhenOpened": "2025-05-22T08:49:00.548Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "warrior.cpp",
-              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\warrior.cpp",
-              "RelativeDocumentMoniker": "Project0514\\warrior.cpp",
-              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\warrior.cpp",
-              "RelativeToolTip": "Project0514\\warrior.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Position.h",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Position.h",
+              "RelativeDocumentMoniker": "PushGame\\Position.h",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Position.h",
+              "RelativeToolTip": "PushGame\\Position.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-22T08:37:56.161Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Helper.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Helper.cpp",
+              "RelativeDocumentMoniker": "PushGame\\Helper.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Helper.cpp",
+              "RelativeToolTip": "PushGame\\Helper.cpp",
+              "ViewState": "AgIAAJ8AAAAAAAAAAAAAALYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-20T01:35:46.188Z",
+              "WhenOpened": "2025-05-22T06:36:00.127Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Helper.h",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Helper.h",
+              "RelativeDocumentMoniker": "PushGame\\Helper.h",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Helper.h",
+              "RelativeToolTip": "PushGame\\Helper.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAMwBkAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-22T06:36:02.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "warrior.h",
-              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\warrior.h",
-              "RelativeDocumentMoniker": "Project0514\\warrior.h",
-              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\warrior.h",
-              "RelativeToolTip": "Project0514\\warrior.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-20T01:35:33.983Z",
+              "Title": "Player.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Player.cpp",
+              "RelativeDocumentMoniker": "PushGame\\Player.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Player.cpp",
+              "RelativeToolTip": "PushGame\\Player.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-22T06:36:01.136Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Map.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Map.cpp",
+              "RelativeDocumentMoniker": "PushGame\\Map.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\PushGame\\Map.cpp",
+              "RelativeToolTip": "PushGame\\Map.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-22T06:36:00.649Z",
               "EditorCaption": ""
             }
           ]

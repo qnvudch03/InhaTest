@@ -66,6 +66,9 @@
     <ClCompile Include="Player.cpp">
       <Filter>TextRPGProject</Filter>
     </ClCompile>
+    <ClCompile Include="DoubleArray.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="warrior.h">

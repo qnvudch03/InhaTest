@@ -1,7 +1,9 @@
 #pragma once
 
-struct PlayerInfo
+struct PlayerPosition
 {
-	int CurrentHP = 0;
-	int Deposit = 0;
+	int x = 0;
+	int y = 0;
 };
+
+void HandleMove();
