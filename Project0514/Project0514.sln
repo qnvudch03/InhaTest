@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Project0514", "Project0514\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PushGame", "PushGame\PushGame.vcxproj", "{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "5Mok", "5Mok\5Mok.vcxproj", "{023D7C73-16DF-47E4-963E-0DE1DCB25C56}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}.Release|x64.Build.0 = Release|x64
 		{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}.Release|x86.ActiveCfg = Release|Win32
 		{63389F1A-BED2-4AF8-8A9B-17A3D46336A8}.Release|x86.Build.0 = Release|Win32
+		{023D7C73-16DF-47E4-963E-0DE1DCB25C56}.Debug|x64.ActiveCfg = Debug|x64
+		{023D7C73-16DF-47E4-963E-0DE1DCB25C56}.Debug|x64.Build.0 = Debug|x64
+		{023D7C73-16DF-47E4-963E-0DE1DCB25C56}.Debug|x86.ActiveCfg = Debug|Win32
+		{023D7C73-16DF-47E4-963E-0DE1DCB25C56}.Debug|x86.Build.0 = Debug|Win32
+		{023D7C73-16DF-47E4-963E-0DE1DCB25C56}.Release|x64.ActiveCfg = Release|x64
+		{023D7C73-16DF-47E4-963E-0DE1DCB25C56}.Release|x64.Build.0 = Release|x64
+		{023D7C73-16DF-47E4-963E-0DE1DCB25C56}.Release|x86.ActiveCfg = Release|Win32
+		{023D7C73-16DF-47E4-963E-0DE1DCB25C56}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

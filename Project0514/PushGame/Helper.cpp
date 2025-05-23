@@ -195,6 +195,38 @@ void CheckBoxOverrlap(int KeyboardInput, MapInfo* MapInfoArray)
 	}
 }
 
+//bool BallMove(int KeyboardInput, MapInfo* MapInfoArray, Position BallPoint)
+//{
+//	Position OverlappedPosition = BallPoint;
+//
+//	switch (KeyboardInput)
+//	{
+//	case KeyBoard::UP:
+//		if (OverlappedPosition.y - 1 <= 0)
+//			return false;
+//		else
+//			BallMove(KeyboardInput, MapInfoArray, OverlappedPosition);
+//		break;
+//
+//	case KeyBoard::DOWN:
+//		OverlappedPosition.y += 1;
+//		break;
+//
+//	case KeyBoard::RIGHT:
+//		OverlappedPosition.x += 1;
+//		break;
+//
+//	case KeyBoard::LEFT:
+//		OverlappedPosition.x -= 1;
+//		break;
+//	default:
+//		break;
+//	}
+//
+//	return true;
+//
+//}
+
 
 // 하나의 포장용? 래핑함수.
 void SetCursorPosition(int x, int y)
