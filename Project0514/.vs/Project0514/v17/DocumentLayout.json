@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\inha\\source\\repos\\Project0514\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\warrior.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\warrior.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\warrior.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\warrior.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\Player.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\warrior.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\warrior.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,13 +42,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "warrior.cpp",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\warrior.cpp",
               "RelativeDocumentMoniker": "Project0514\\warrior.cpp",
               "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\warrior.cpp",
               "RelativeToolTip": "Project0514\\warrior.cpp",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAnwHIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAAUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-27T08:24:32.409Z",
               "EditorCaption": ""
@@ -61,46 +61,46 @@
               "RelativeDocumentMoniker": "Project0514\\warrior.h",
               "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\warrior.h",
               "RelativeToolTip": "Project0514\\warrior.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-27T08:24:57.388Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\main.cpp",
               "RelativeDocumentMoniker": "Project0514\\main.cpp",
               "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\main.cpp",
               "RelativeToolTip": "Project0514\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-27T08:06:58.142Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Player.cpp",
               "RelativeDocumentMoniker": "Project0514\\Player.cpp",
               "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Player.cpp",
               "RelativeToolTip": "Project0514\\Player.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-27T08:06:50.278Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Player.h",
               "RelativeDocumentMoniker": "Project0514\\Player.h",
               "ToolTip": "C:\\Users\\inha\\source\\repos\\Project0514\\Project0514\\Player.h",
               "RelativeToolTip": "Project0514\\Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-27T07:48:43.429Z",
               "EditorCaption": ""
