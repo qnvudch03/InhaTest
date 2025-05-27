@@ -2,6 +2,7 @@
 
 #include "Player.h"
 
+
 struct Player
 {
 	PlayerInfo PlayerInformation;

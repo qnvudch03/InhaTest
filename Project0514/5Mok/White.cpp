@@ -9,12 +9,14 @@ bool Turn_White()
 	//2. 글로벌 체스판에 등재
 	//3. 업데이트
 
-	Position CurrentStone = {GAMESIZE / 2, GAMESIZE / 2};
+	Position InitPosition = {GAMESIZE / 2, GAMESIZE / 2};
+	Position NextPosition = { 0, 0 };
 
 	while (true)
 	{
-		CurrentStone = HandleKeyInput(CurrentStone);
-		G_Chessboard[CurrentStone.y][CurrentStone.x] = Chess::White;
+		NextPosition = HandleKeyInput(InitPosition);
+
+		if (G_Chessboard[NextPosition.y][NextPosition.x] != Chess::None)
 
 		PrintBoard();
 		if (DetectSpaceBar())
