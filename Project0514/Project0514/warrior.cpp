@@ -53,3 +53,65 @@ int SetPlayerClass(Player& Youser)
 
 	return WoriarClasses;
 }
+
+void MakePlayerClass(Player* Youser, int YouserNumber)
+{
+	for (int PlayerClass = 1; PlayerClass <= YouserNumber; PlayerClass++)
+	{
+		if (PlayerClass == WorialClass::warrior)
+		{
+			Youser->Power = 55;
+			Youser->CriticalRate = 0.25f;
+			Youser->Acurate = 9;
+			Youser->PlayerInformation.CurrentHP = 150;
+			Youser->ClassName = "전사";
+		}
+
+		else if (PlayerClass == WorialClass::archor)
+		{
+			Youser->Power = 45;
+			Youser->CriticalRate = 0.7f;
+			Youser->Acurate = 7;
+			Youser->PlayerInformation.CurrentHP = 50;
+			Youser->ClassName = "궁수";
+		}
+
+		else if (PlayerClass == WorialClass::axe)
+		{
+			Youser->Power = 70;
+			Youser->CriticalRate = 0.2f;
+			Youser->Acurate = 4;
+			Youser->PlayerInformation.CurrentHP = 70;
+			Youser->ClassName = "광전사";
+		}
+
+		//자동으로 다음 배열에 있는 Youser Index 접근
+		Youser++;
+	}
+}
+
+Player* SwitchPlayerClass(Player* YouserArray)
+{
+	int choicePlayer = -1;
+	Player* SellectedPlayer = nullptr;
+
+	while (true)
+	{
+		cout << "\n--용병 변경--\n";
+		cout << "1. 전사\n2. 궁수\n3. 광전사\n\n";
+		cin >> choicePlayer;
+
+		if (YouserArray[choicePlayer - 1].PlayerInformation.CurrentHP >= 0)
+		{
+			SellectedPlayer = &YouserArray[choicePlayer - 1];
+			break;
+		}
+
+		else
+		{
+			cout << "\n 이미 사망한 캐릭터 입니다\n";
+		}
+	}
+
+	return SellectedPlayer;
+}

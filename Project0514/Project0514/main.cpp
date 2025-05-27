@@ -9,9 +9,7 @@
 
 using namespace std;
 
-#define MONSTER_COUNT 5
-
-
+#define MONSTER_COUNT 3
 
 bool StartFight(Player& Youser, Monster& Enemy);
 int GoToBattleFiled();
@@ -27,19 +25,21 @@ int main(void)
 	5. 3번만 공격 가능
 	*/
 
-	Player Youser;
+	//단일 선택 버젼
+	//Player Youser;
+	//SetPlayerClass(Youser);
 
-	SetPlayerClass(Youser);
+	//다중 소환 후 게임플레이 버젼
+	Player Yousers[3] = {};
+	MakePlayerClass(Yousers, sizeof(Yousers)/sizeof(Player));
 
-	std::string TempName = "(String)전사";
-	int pointersize = sizeof(TempName);
-	int Valusize = sizeof(&TempName);
-	//std::string TempName2 = TEXT("스트링");
+	Player* Youser = Yousers;
 
 	while (true)
 	{
 		cout << "\n---메뉴---\n";
-		cout << "[ 보유골드 - " << Youser.PlayerInformation.Deposit << "G ]\n\n";
+		cout << "[ 현재캐릭터 : " << Youser->ClassName << " ]\n";
+		cout << "[ 보유골드 - " << Youser->PlayerInformation.Deposit << "G ]\n\n";
 		cout << "1. 던전 입장\n2. 캐릭터 선택\n3. 종료\n";
 
 		int InSelectMenu = 0;
@@ -81,7 +81,7 @@ int main(void)
 					}
 					
 					//전투에서 생존시 다음전투로
-					if (StartFight(Youser, EnemyArray[BattleCount]))
+					if (StartFight(*Youser, EnemyArray[BattleCount]))
 					{
 						Sleep(2000);
 					}
@@ -122,7 +122,12 @@ int main(void)
 			
 
 		else if (InSelectMenu == 2)
-			SetPlayerClass(Youser);
+		{
+			//SetPlayerClass(Youser);
+			Youser = SwitchPlayerClass(Yousers);
+			system("cls");
+		}
+			
 
 		else if (InSelectMenu == 3)
 			break;

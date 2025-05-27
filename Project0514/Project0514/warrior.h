@@ -21,3 +21,5 @@ enum WorialClass
 };
 
 int SetPlayerClass(Player& Youser);
+void MakePlayerClass(Player* Youser, int YouserNumber);
+Player* SwitchPlayerClass(Player* YouserArray);
