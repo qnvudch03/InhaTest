@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\inha\\source\\repos\\0527__Pointer\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{82415552-2829-4281-9355-870A2AFC5F76}|0527__Pointer\\0527__Pointer.vcxproj|C:\\Users\\inha\\source\\repos\\0527__Pointer\\0527__Pointer\\0527__Pointer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{82415552-2829-4281-9355-870A2AFC5F76}|0527__Pointer\\0527__Pointer.vcxproj|solutionrelative:0527__Pointer\\0527__Pointer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{98A30CDB-740B-49D1-A6D4-82216629A5C4}|0528_NewDelete\\0528_NewDelete.vcxproj|C:\\Users\\inha\\source\\repos\\0527__Pointer\\0528_NewDelete\\0528_NewDelete.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{98A30CDB-740B-49D1-A6D4-82216629A5C4}|0528_NewDelete\\0528_NewDelete.vcxproj|solutionrelative:0528_NewDelete\\0528_NewDelete.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,18 +27,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "0527__Pointer.cpp",
-              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\0527__Pointer\\0527__Pointer\\0527__Pointer.cpp",
-              "RelativeDocumentMoniker": "0527__Pointer\\0527__Pointer.cpp",
-              "ToolTip": "C:\\Users\\inha\\source\\repos\\0527__Pointer\\0527__Pointer\\0527__Pointer.cpp",
-              "RelativeToolTip": "0527__Pointer\\0527__Pointer.cpp",
-<<<<<<< HEAD
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAmAAAAAAAAAA==",
-=======
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAEsAAAAmAAAAAAAAAA==",
->>>>>>> 1bc100cbd1d68b55f4f42341ccdca1b59e4cd645
+              "Title": "0528_NewDelete.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\0527__Pointer\\0528_NewDelete\\0528_NewDelete.cpp",
+              "RelativeDocumentMoniker": "0528_NewDelete\\0528_NewDelete.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\0527__Pointer\\0528_NewDelete\\0528_NewDelete.cpp",
+              "RelativeToolTip": "0528_NewDelete\\0528_NewDelete.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-27T00:09:51.753Z",
+              "WhenOpened": "2025-05-28T02:24:21.456Z",
               "EditorCaption": ""
             }
           ]

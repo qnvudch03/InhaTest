@@ -17,7 +17,8 @@ enum WorialClass
 {
 	warrior = 1,
 	archor,
-	axe
+	axe,
+	WorialMax
 };
 
 int SetPlayerClass(Player& Youser);

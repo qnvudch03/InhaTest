@@ -9,11 +9,13 @@
 
 using namespace std;
 
-#define MONSTER_COUNT 3
+#define YOUSER_NUMBER 3
+#define CLEARHEAPARRAYPTR(x) delete[] x; x = nullptr;
 
 bool StartFight(Player& Youser, Monster& Enemy);
 int GoToBattleFiled();
 void MonsterApear(Monster Enemy);
+bool CheckPartyAllDead(Player* Party);
 
 int main(void)
 {
@@ -30,13 +32,23 @@ int main(void)
 	//SetPlayerClass(Youser);
 
 	//다중 소환 후 게임플레이 버젼
-	Player Yousers[3] = {};
-	MakePlayerClass(Yousers, sizeof(Yousers)/sizeof(Player));
+	Player Yousers[YOUSER_NUMBER] = {};
+	MakePlayerClass(Yousers, sizeof(Yousers) / sizeof(Player));
 
 	Player* Youser = Yousers;
 
 	while (true)
 	{
+		//파티 전멸 여부 확인
+		if (CheckPartyAllDead(Yousers))
+		{
+			cout << "\n\n[파티가 전멸하였습니다]\n";
+			break;
+		}
+
+
+
+		//본게임 시작
 		cout << "\n---메뉴---\n";
 		cout << "[ 현재캐릭터 : " << Youser->ClassName << " ]\n";
 		cout << "[ 보유골드 - " << Youser->PlayerInformation.Deposit << "G ]\n\n";
@@ -48,78 +60,103 @@ int main(void)
 
 		if (InSelectMenu == 1)
 		{
-			Monster EnemyArray[MONSTER_COUNT];
-
-			int bIsBattle = 0;
-			int MonsterIndex = 0;
-
-			while (true)
+			if (Youser->PlayerInformation.CurrentHP != 0)
 			{
-				EnemyArray[MonsterIndex] = SpawnMonster();
-				//cout << "1. 싸운다.\n2. 도망간다.\n3. 마을로 복귀\n";
-				cout << "1. 싸운다.\n2. 도망간다.\n";
 
-				bIsBattle = 0;
-				cout << ">>";
-				cin >> bIsBattle;
+				std::random_device rd;
+				int RandomMonsterNum = (rd() % 5) + 1;
+				Monster* RandomEnemyArray = new Monster[RandomMonsterNum];
 
-				if (bIsBattle == 1 || bIsBattle == 3)
-					break;
+				int bIsBattle = 0;
+				int MonsterIndex = 0;
 
-			}
-
-			if (bIsBattle == 1)
-			{
-				bool bIsStageClear = true;
-				//전투 for 문
-				for (int BattleCount = 0; BattleCount < MONSTER_COUNT; BattleCount++)
+				while (true)
 				{
-					//다음 처치할 몬스터 생성
-					if (EnemyArray[BattleCount].HP == 0)
-					{
-						EnemyArray[BattleCount] = SpawnMonster();
-					}
-					
-					//전투에서 생존시 다음전투로
-					if (StartFight(*Youser, EnemyArray[BattleCount]))
-					{
-						Sleep(2000);
-					}
+					std::cout << "\n[난이도 : " << RandomMonsterNum << "]\n";
 
-					//전투중 사망시 전투 탈출
-					else
+					RandomEnemyArray[MonsterIndex] = SpawnMonster();
+					cout << "1. 싸운다.\n2. 도망간다.\n";
+
+					//bIsBattle = 0;
+					cout << ">>";
+					cin >> bIsBattle;
+
+					if (bIsBattle == 1)
 					{
-						bIsStageClear = false;
 						break;
 					}
+					else if (bIsBattle == 2)
+					{
+						RandomMonsterNum = (rd() % 5) + 1;
+						CLEARHEAPARRAYPTR(RandomEnemyArray);
+						RandomEnemyArray = new Monster[RandomMonsterNum];
+
+					}
+
 				}
-				
+
+				if (bIsBattle == 1)
 				{
-					int tempNum = 0;
 
-					if (bIsStageClear)
+					bool bIsStageClear = true;
+					//전투 for 문
+					for (int BattleCount = 0; BattleCount < RandomMonsterNum; BattleCount++)
 					{
-						cout << "\n\n---던젼 탐험 클리어---\n";
-					}
-					else
-					{
-						cout << "\n\n---던젼 탐헝 실패---\n";
+						//다음 처치할 몬스터 생성
+						if (RandomEnemyArray[BattleCount].HP == 0)
+						{
+							RandomEnemyArray[BattleCount] = SpawnMonster();
+						}
+
+						//전투에서 생존시 다음전투로
+						if (StartFight(*Youser, RandomEnemyArray[BattleCount]))
+						{
+							Sleep(2000);
+						}
+
+						//전투중 사망시 전투 탈출
+						else
+						{
+							bIsStageClear = false;
+							break;
+						}
 					}
 
-					cout << "\n\nPress Any Key To Continue --> (0)\n";
-					cin >> tempNum;
-					system("cls");
+					{
+						int tempNum = 0;
+
+						if (bIsStageClear)
+						{
+							cout << "\n\n---던젼 탐험 클리어---\n";
+						}
+						else
+						{
+							cout << "\n\n---던젼 탐헝 실패---\n";
+						}
+
+						cout << "\n\nPress Any Key To Continue --> (0)\n";
+						CLEARHEAPARRAYPTR(RandomEnemyArray);
+						cin >> tempNum;
+						system("cls");
+					}
+
+				}
+
+				else if (bIsBattle == 2)
+				{
+					CLEARHEAPARRAYPTR(RandomEnemyArray);
 				}
 			}
 
-			else if (bIsBattle == 3)
+			else
 			{
+				cout << " ( ! ) 캐릭터 [ " << Youser->ClassName << " ] 는 사망하여 플레이 할 수 없습니다.\n\n";
 				continue;
 			}
+			
 
-			
 		}
-			
+
 
 		else if (InSelectMenu == 2)
 		{
@@ -127,14 +164,14 @@ int main(void)
 			Youser = SwitchPlayerClass(Yousers);
 			system("cls");
 		}
-			
+
 
 		else if (InSelectMenu == 3)
 			break;
 
 	}
 
-	cout << "\n----------End Game----------";	
+	cout << "\n----------End Game----------";
 }
 
 bool StartFight(Player& Youser, Monster& Enemy)
@@ -164,7 +201,7 @@ bool StartFight(Player& Youser, Monster& Enemy)
 			{
 				cout << "크리티컬 공격!\n";
 
-				Damage = Youser.Power * 2 - 0.5*(Enemy.DEF);
+				Damage = Youser.Power * 2 - 0.5 * (Enemy.DEF);
 
 				MosterHP = MosterHP - Damage;
 			}
@@ -178,7 +215,7 @@ bool StartFight(Player& Youser, Monster& Enemy)
 			}
 
 			MosterHP = (MosterHP < 0) ? 0 : MosterHP;
-			cout <<"[ " <<Enemy.MonsterName << " HP : " << MosterHP << " ]\n";
+			cout << "[ " << Enemy.MonsterName << " HP : " << MosterHP << " ]\n";
 
 		}
 		else
@@ -189,7 +226,7 @@ bool StartFight(Player& Youser, Monster& Enemy)
 				PlayerHP = 0;
 
 			cout << "실패!\n";
-			cout << Enemy.MonsterName<<"(의) 공격 : " << "- "<<Enemy.ATK << '\n';
+			cout << Enemy.MonsterName << "(의) 공격 : " << "- " << Enemy.ATK << '\n';
 			cout << "[ " << Youser.ClassName << " HP : " << PlayerHP << " ]\n";
 			cout << "[ " << Enemy.MonsterName << " HP : " << MosterHP << " ]\n";
 		}
@@ -203,6 +240,7 @@ bool StartFight(Player& Youser, Monster& Enemy)
 				cout << "\n토벌 실패 : [ 잔여 몬스터 HP  " << MosterHP << "]" << "\n";
 				cout << "[ 소지금  " << OriginGold << "  ->  " << CurrentGold << " ]\n";
 				Youser.PlayerInformation.Deposit = CurrentGold;
+				Youser.PlayerInformation.CurrentHP = 0;
 				return false;
 
 				//아이템 사용 기능이 있었을떄의 기능
@@ -263,7 +301,24 @@ int GoToBattleFiled()
 
 void MonsterApear(Monster Enemy)
 {
-	std::cout << "\n-----["<<Enemy.MonsterName<<"]이(가) 출현하였습니다-----\n";
+	std::cout << "\n-----[" << Enemy.MonsterName << "]이(가) 출현하였습니다-----\n";
+}
+
+bool CheckPartyAllDead(Player* Party)
+{
+	int DeadWorial = 0;
+	
+	for (int WorialIndex = 0; WorialIndex < YOUSER_NUMBER; WorialIndex++)
+	{
+		if (Party->PlayerInformation.CurrentHP == 0)
+		{
+			DeadWorial++;
+		}
+
+		Party++;
+	}
+
+	return (DeadWorial == YOUSER_NUMBER) ? true : false;
 }
 
 
