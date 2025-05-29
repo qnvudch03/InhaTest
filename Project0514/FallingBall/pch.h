@@ -5,7 +5,15 @@
 #define MAP_HEIGHT 25
 #define MAP_WIDTH 8
 
-#define MAX_ARRAYBALL 20
+#define MAX_ARRAYBALL 40
+#define MAX_LIFE 10
+
+enum BallType
+{
+	BallYellow = 1,
+	BallBlue = 2,
+	BallHeal = 3
+};
 
 struct Position
 {
@@ -24,8 +32,6 @@ struct Position
 	//bool operator!=(Position b) { return (x != b.x && y != b.y) ? true : false; }
 	bool operator==(Position b) { return (x == b.x && y == b.y) ? true : false; }
 };
-
-extern Position NullPosition;
 
 #ifdef _DEBUG
 
