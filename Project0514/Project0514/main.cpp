@@ -111,6 +111,8 @@ int main(void)
 						//전투에서 생존시 다음전투로
 						if (StartFight(*Youser, RandomEnemyArray[BattleCount]))
 						{
+							//60%확율로 돈의 랜덤직업의 돈 절반을 털어간다
+							//LostMoney(*Yousers);
 							Sleep(2000);
 						}
 
@@ -274,6 +276,7 @@ bool StartFight(Player& Youser, Monster& Enemy)
 				cout << "[보상]\n";
 				cout << "[사냥골드] : " << Enemy.Deposit << " G\n";
 				Youser.PlayerInformation.Deposit += Enemy.Deposit;
+
 				int ReWord = GetHuntReword();
 				PrintItemOption(ReWord);
 
@@ -320,5 +323,3 @@ bool CheckPartyAllDead(Player* Party)
 
 	return (DeadWorial == YOUSER_NUMBER) ? true : false;
 }
-
-

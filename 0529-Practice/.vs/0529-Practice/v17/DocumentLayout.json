@@ -1,0 +1,45 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\inha\\source\\repos\\0529-Practice\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7C7229D3-94B4-44DD-BF82-AD850AA3A987}|0529-Practice\\0529-Practice.vcxproj|C:\\Users\\inha\\source\\repos\\0529-Practice\\0529-Practice\\0529-Practice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{7C7229D3-94B4-44DD-BF82-AD850AA3A987}|0529-Practice\\0529-Practice.vcxproj|solutionrelative:0529-Practice\\0529-Practice.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "0529-Practice.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\0529-Practice\\0529-Practice\\0529-Practice.cpp",
+              "RelativeDocumentMoniker": "0529-Practice\\0529-Practice.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\0529-Practice\\0529-Practice\\0529-Practice.cpp",
+              "RelativeToolTip": "0529-Practice\\0529-Practice.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-29T06:40:11.34Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

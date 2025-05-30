@@ -10,9 +10,10 @@
 
 enum BallType
 {
-	BallYellow = 1,
-	BallBlue = 2,
-	BallHeal = 3
+	BallYellow = 0,
+	BallBlue = 1,
+	BallHeal = 2,
+	BallMax
 };
 
 struct Position

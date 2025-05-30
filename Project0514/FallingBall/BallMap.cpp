@@ -237,51 +237,48 @@ void BallMap::UpdateHealBall()
 
 void BallMap::UpdateBall(BallType Balltype)
 {
-	//Position* SelectedBallType = nullptr;
+	Position** SelectedBallType = nullptr;
 
-	//switch (Balltype)
-	//{
-	//case Yellow:
-	//	SelectedBallType = BallManagerArray;
-	//	break;
-	//case Blue:
-	//	SelectedBallType = *REDBallManagerArray;
-	//	break;
-	//case Heal:
-	//	SelectedBallType = *HeallingBallManagerArray;
-	//	break;
-	//default:
-	//	break;
-	//}
+	switch (Balltype)
+	{
+	case BallYellow:
+		SelectedBallType = BallManager[BallType::BallYellow];
+		break;
+	case BallBlue:
+		SelectedBallType = BallManager[BallType::BallBlue];
+		break;
+	case BallHeal:
+		SelectedBallType = BallManager[BallType::BallHeal];
+		break;
+	default:
+		break;
+	}
 
+	for (int Index = 0; Index < MAX_ARRAYBALL; Index++)
+	{
 
+		{
+			//매니저배열에 접근한 index가 nullPosition 이면 건너뛰기
+			if (SelectedBallType[Index] == nullptr)
+			{
+				continue;
+			}
 
-	////왜 접근이 안되는거야
-	//for (int Index = 0; Index < MAX_ARRAYBALL; Index++)
-	//{
+			//바닥에 이미 닿은 노란공 삭제
+			else if (SelectedBallType[Index]->y == MAP_HEIGHT - 1)
+			{
+				delete BallManagerArray[Index];
+				BallManagerArray[Index] = nullptr;
+				Score++;
+			}
 
-	//	{
-	//		//매니저배열에 접근한 index가 nullPosition 이면 건너뛰기
-	//		if (&SelectedBallType[Index] == nullptr)
-	//		{
-	//			continue;
-	//		}
+			else
+			{
+				BallManagerArray[Index]->y += 1;
+			}
+		}
 
-	//		//바닥에 이미 닿은 노란공 삭제
-	//		else if (&SelectedBallType[Index]->y == MAP_HEIGHT - 1)
-	//		{
-	//			delete BallManagerArray[Index];
-	//			BallManagerArray[Index] = nullptr;
-	//			Score++;
-	//		}
-
-	//		else
-	//		{
-	//			BallManagerArray[Index]->y += 1;
-	//		}
-	//	}
-
-	//}
+	}
 
 
 

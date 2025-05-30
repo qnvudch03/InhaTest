@@ -1,4 +1,7 @@
-﻿  main.cpp
-C:\Users\inha\source\repos\Project0514\Project0514\main.cpp(195,23): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-C:\Users\inha\source\repos\Project0514\Project0514\main.cpp(204,31): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-  Project0514.vcxproj -> C:\Users\inha\source\repos\Project0514\x64\Debug\Project0514.exe
+﻿  Player.cpp
+C:\Users\inha\source\repos\Project0514\Project0514\warrior.h(8,13): error C3646: 'PlayerInformation': 알 수 없는 재정의 지정자입니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  
+C:\Users\inha\source\repos\Project0514\Project0514\warrior.h(8,2): error C4430: 형식 지정자가 없습니다. int로 가정합니다. 참고: C++에서는 기본 int를 지원하지 않습니다.
+  (소스 파일 'Player.cpp'을(를) 컴파일하는 중)
+  

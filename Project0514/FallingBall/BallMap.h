@@ -8,6 +8,8 @@ extern Position* REDBallManagerArray[MAX_ARRAYBALL];
 
 extern Position* HeallingBallManagerArray[MAX_ARRAYBALL];
 
+extern Position** BallManager[BallType::BallMax];
+
 namespace BallMap
 {
 	void PrintMap(Position* PlayerPosition);

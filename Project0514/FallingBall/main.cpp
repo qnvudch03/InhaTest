@@ -18,6 +18,8 @@ Position* BallManagerArray[MAX_ARRAYBALL];
 Position* REDBallManagerArray[MAX_ARRAYBALL];
 Position* HeallingBallManagerArray[MAX_ARRAYBALL];
 
+Position** BallManager[BallType::BallMax] = { BallManagerArray , REDBallManagerArray , HeallingBallManagerArray };
+
 int main()
 {
 	//입력
@@ -56,11 +58,13 @@ int main()
 					//nullPtr을 가르키는 요소를 찾아 공 포인터를 할당
 					for (int BallIndex = 0; BallIndex < MAX_ARRAYBALL; BallIndex++)
 					{
-						if (BallManagerArray[BallIndex] != nullptr)
+						//if (BallManagerArray[BallIndex] != nullptr)
+						if (BallManager[BallType::BallYellow][BallIndex] != nullptr)
 							continue;
 
 						Position* NewBall = MakeNewBall();
-						BallManagerArray[BallIndex] = NewBall;
+						//BallManagerArray[BallIndex] = NewBall;
+						BallManager[BallType::BallYellow][BallIndex] = NewBall;
 						break;
 					}
 				}
@@ -71,11 +75,13 @@ int main()
 					//nullPtr을 가르키는 요소를 찾아 공 포인터를 할당
 					for (int BallIndex = 0; BallIndex < MAX_ARRAYBALL; BallIndex++)
 					{
-						if (REDBallManagerArray[BallIndex] != nullptr)
+						//if (REDBallManagerArray[BallIndex] != nullptr)
+						if (BallManager[BallType::BallBlue][BallIndex] != nullptr)
 							continue;
 
 						Position* NewBall = MakeNewBall();
-						REDBallManagerArray[BallIndex] = NewBall;
+						//REDBallManagerArray[BallIndex] = NewBall;
+						BallManager[BallType::BallBlue][BallIndex] = NewBall;
 						break;
 					}
 				}
@@ -85,11 +91,12 @@ int main()
 				{
 					for (int BallIndex = 0; BallIndex < MAX_ARRAYBALL; BallIndex++)
 					{
-						if (HeallingBallManagerArray[BallIndex] != nullptr)
+						//if (HeallingBallManagerArray[BallIndex] != nullptr)
+						if (BallManager[BallType::BallHeal][BallIndex] != nullptr)
 							continue;
 
 						Position* NewBall = MakeNewBall();
-						HeallingBallManagerArray[BallIndex] = NewBall;
+						BallManager[BallType::BallHeal][BallIndex] = NewBall;
 						break;
 					}
 				}
@@ -103,16 +110,19 @@ int main()
 		MoveDir PlayerInput = HandleKeyInput();
 
 		BallMap::UpdateYellowBall();
+		//BallMap::UpdateBall(BallType::BallYellow);
 
 		if (YellowFramdCount == 0)
 		{
 			BallMap::UpdateRedBall();
+			//BallMap::UpdateBall(BallType::BallBlue);
 			YellowFramdCount = 2; //2
 		}
 
 		if (HealFrameCount == 0)
 		{
 			BallMap::UpdateHealBall();
+			//BallMap::UpdateBall(BallType::BallHeal);
 			HealFrameCount = 3; //3
 		}
 
@@ -151,6 +161,30 @@ int main()
 		HealFrameCount--;
 
 	}
+
+	for (int i = 0; i < MAX_ARRAYBALL; i++)
+	{
+		if (BallManagerArray[i] != nullptr)
+		{
+			delete BallManagerArray[i];
+			BallManagerArray[i] = nullptr;
+		}
+			
+
+		if (REDBallManagerArray[i] != nullptr)
+		{
+			delete REDBallManagerArray[i];
+			REDBallManagerArray[i] = nullptr;
+		}
+			
+
+		if (HeallingBallManagerArray[i] != nullptr)
+		{
+			delete HeallingBallManagerArray[i];
+			HeallingBallManagerArray[i] = nullptr;
+		}
+	}
+
 }
 
 void ClearMap()

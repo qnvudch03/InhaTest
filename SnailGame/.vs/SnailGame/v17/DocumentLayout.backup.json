@@ -1,0 +1,181 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\inha\\source\\repos\\SnailGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\SnailGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\SnailGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Snail.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Snail.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Logic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Logic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Logic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Logic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Helper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Helper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Snail.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Snail.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 8,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Snail.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Snail.cpp",
+              "RelativeDocumentMoniker": "SnailGame\\Snail.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Snail.cpp",
+              "RelativeToolTip": "SnailGame\\Snail.cpp",
+              "ViewState": "AgIAACgAAAAAAAAAAAApwEIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-29T09:10:51.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Logic.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Logic.cpp",
+              "RelativeDocumentMoniker": "SnailGame\\Logic.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Logic.cpp",
+              "RelativeToolTip": "SnailGame\\Logic.cpp",
+              "ViewState": "AgIAAFQAAAAAAAAAAAApwG4AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-30T01:10:22.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Logic.h",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Logic.h",
+              "RelativeDocumentMoniker": "SnailGame\\Logic.h",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Logic.h",
+              "RelativeToolTip": "SnailGame\\Logic.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-30T01:09:08.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Helper.h",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Helper.h",
+              "RelativeDocumentMoniker": "SnailGame\\Helper.h",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Helper.h",
+              "RelativeToolTip": "SnailGame\\Helper.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-29T08:24:10.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "pch.h",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\pch.h",
+              "RelativeDocumentMoniker": "SnailGame\\pch.h",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\pch.h",
+              "RelativeToolTip": "SnailGame\\pch.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-29T08:19:24.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SnailGame.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\SnailGame.cpp",
+              "RelativeDocumentMoniker": "SnailGame\\SnailGame.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\SnailGame.cpp",
+              "RelativeToolTip": "SnailGame\\SnailGame.cpp",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAFkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-29T08:16:19.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Map.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Map.cpp",
+              "RelativeDocumentMoniker": "SnailGame\\Map.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Map.cpp",
+              "RelativeToolTip": "SnailGame\\Map.cpp",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABsAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-30T01:52:48.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Snail.h",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Snail.h",
+              "RelativeDocumentMoniker": "SnailGame\\Snail.h",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Snail.h",
+              "RelativeToolTip": "SnailGame\\Snail.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-29T09:09:59.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Map.h",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Map.h",
+              "RelativeDocumentMoniker": "SnailGame\\Map.h",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Map.h",
+              "RelativeToolTip": "SnailGame\\Map.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-30T01:53:21.519Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
