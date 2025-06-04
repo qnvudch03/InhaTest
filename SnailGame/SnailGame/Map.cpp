@@ -66,11 +66,17 @@ void PrintMap(Position** SnilArray, Position** FoodArray)
 		FoodIndex++;
 	}
 
-	//점수를 그린다.
+	//점수 표시 창를 그린다.
 	{
 		SetCursorColor(Color::White);
 		SetCursorPosition(MAP_WIDTH * 2 + 1, 0);
 		std::cout << " 현재 SCORE : " << Score;
+
+		SetCursorPosition(MAP_WIDTH * 2 + 1, 1);
+		std::cout << " 지렁이 길이 : " << SnailIndex << '\n';
+
+		SetCursorPosition(MAP_WIDTH * 2 + 1, 2);
+		std::cout << " 현재 떡밥 개수 :   [ " << FoodIndex << " / 100 ]";
 	}
 
 
@@ -98,18 +104,23 @@ void PrintMap(Position** SnilArray, Position** FoodArray, Position** DieteFoodAr
 		if (SnilArray[SnailIndex] == nullptr || (SnilArray[SnailIndex]->x == -1&& SnilArray[SnailIndex]->y))
 			break;
 
-		if (SnilArray[SnailIndex]->x != -1 && SnilArray[SnailIndex]->y)
+		if (SnilArray[SnailIndex]->x != 0 && SnilArray[SnailIndex]->y != 0 && SnilArray[SnailIndex]->x <= MAP_WIDTH - 2 && SnilArray[SnailIndex]->y <= MAP_HEIGHT - 2)
 		{
+			SetCursorColor(Color::RightGreen);
+			SetCursorPosition(SnilArray[SnailIndex]->x * 2, SnilArray[SnailIndex]->y);
+			if (SnailIndex == 0)
+				std::cout << "◎";
+			else
+				std::cout << "●";
 
+			SnailIndex++;
 		}
-		SetCursorColor(Color::RightGreen);
-		SetCursorPosition(SnilArray[SnailIndex]->x * 2, SnilArray[SnailIndex]->y);
-		if (SnailIndex == 0)
-			std::cout << "◎";
-		else
-			std::cout << "●";
 
-		SnailIndex++;
+		else
+		{
+			SnailIndex++;
+		}
+		
 	}
 
 	//음식을 그린다.
@@ -149,11 +160,27 @@ void PrintMap(Position** SnilArray, Position** FoodArray, Position** DieteFoodAr
 		DietFoodIndex++;
 	}
 
-	//점수를 그린다.
+	//점수 표시 창를 그린다.
 	{
+		/*SetCursorColor(Color::White);
+		SetCursorPosition(MAP_WIDTH*2 + 1, MAP_HEIGHT + 2);
+		std::cout << " 현재 SCORE : " << Score;
+
+		SetCursorPosition(MAP_WIDTH * 2 + 1, MAP_HEIGHT + 3);
+		std::cout << " 지렁이 길이 : " << SnailIndex;
+
+		SetCursorPosition(MAP_WIDTH * 2 + 1, MAP_HEIGHT + 4);
+		std::cout << " 현재 떡밥 개수 :   [ " << FoodIndex << " / 100 ]";*/
+
 		SetCursorColor(Color::White);
 		SetCursorPosition(MAP_WIDTH * 2 + 1, 0);
-		std::cout << " 현재 SCORE : " << Score;
+		std::cout << "SCORE : " << Score;
+
+		SetCursorPosition(MAP_WIDTH * 2 + 1, 1);
+		std::cout << "Snail: Length " << SnailIndex;
+
+		SetCursorPosition(MAP_WIDTH * 2 + 1, 2);
+		std::cout << "Food Num :   [ " << FoodIndex << " / 100 ]";
 	}
 
 
