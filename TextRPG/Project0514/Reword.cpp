@@ -19,7 +19,7 @@ int GetHuntReword()
 	return randomNum;
 }
 
-void PrintItemOption(int ItemOption)
+void PrintItemOption(const int ItemOption)
 {
 	std::cout << "[ ";
 

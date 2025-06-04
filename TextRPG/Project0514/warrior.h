@@ -2,19 +2,12 @@
 
 #include "Player.h"
 
-struct PlayerInfo
-{
-	int CurrentHP = 0;
-	int Deposit = 0;
-};
-
 struct Player
 {
 	PlayerInfo PlayerInformation;
 	int Power = 0;
 	float CriticalRate = 0.0f;
 	const char* ClassName = nullptr;
-	//std::string ClassNameString;
 	int Acurate = 0;
 };
 

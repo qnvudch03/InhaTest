@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\inha\\source\\repos\\TextRPG\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\Reword.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\Reword.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\Reword.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\Reword.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -17,14 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\Player.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\Reword.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\Reword.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\Reword.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{4644743C-06F2-4346-9F70-363CCE59814A}|Project0514\\Project0514.vcxproj|solutionrelative:Project0514\\Reword.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,33 +46,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
               "Title": "Reword.cpp",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\Reword.cpp",
               "RelativeDocumentMoniker": "Project0514\\Reword.cpp",
               "ToolTip": "C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\Reword.cpp",
               "RelativeToolTip": "Project0514\\Reword.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-29T08:08:58.851Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Reword.h",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\Reword.h",
               "RelativeDocumentMoniker": "Project0514\\Reword.h",
               "ToolTip": "C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\Reword.h",
               "RelativeToolTip": "Project0514\\Reword.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-29T08:08:55.788Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Player.cpp",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\Player.cpp",
               "RelativeDocumentMoniker": "Project0514\\Player.cpp",
@@ -85,39 +85,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "warrior.h",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\warrior.h",
               "RelativeDocumentMoniker": "Project0514\\warrior.h",
               "ToolTip": "C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\warrior.h",
               "RelativeToolTip": "Project0514\\warrior.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-29T08:00:15.133Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Player.h",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\Player.h",
               "RelativeDocumentMoniker": "Project0514\\Player.h",
               "ToolTip": "C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\Player.h",
               "RelativeToolTip": "Project0514\\Player.h",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-05-29T08:00:09.837Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\main.cpp",
               "RelativeDocumentMoniker": "Project0514\\main.cpp",
               "ToolTip": "C:\\Users\\inha\\source\\repos\\TextRPG\\Project0514\\main.cpp",
               "RelativeToolTip": "Project0514\\main.cpp",
-              "ViewState": "AgIAAK4AAAAAAAAAAAAAADwBAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAPMAAAAAAAAAAAAnwAsBAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-29T08:00:07.678Z",
               "EditorCaption": ""

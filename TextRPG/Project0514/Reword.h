@@ -2,4 +2,4 @@
 
 int GetHuntReword();
 
-void PrintItemOption(int ItemOption);
+void PrintItemOption(const int ItemOption);

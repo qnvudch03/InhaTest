@@ -14,8 +14,8 @@ using namespace std;
 
 bool StartFight(Player& Youser, Monster& Enemy);
 int GoToBattleFiled();
-void MonsterApear(Monster Enemy);
-bool CheckPartyAllDead(Player* Party);
+void MonsterApear(const Monster Enemy);
+bool CheckPartyAllDead(const Player* Party);
 void LostMoeny(Player& Youser);
 
 int main(void)
@@ -113,14 +113,13 @@ int main(void)
 						if (StartFight(*Youser, RandomEnemyArray[BattleCount]))
 						{
 							//60%확율로 돈의 랜덤직업의 돈 절반을 털어간다
-
-							int LostMoneyRate = (rd() % 100) + 1;
+							/*int LostMoneyRate = (rd() % 100) + 1;
 							int RandomWorialIndex = (rd() % 3);
 
 							if (LostMoneyRate > 60)
 							{
 								LostMoeny(Yousers[RandomWorialIndex]);
-							}
+							}*/
 
 
 							Sleep(2000);
@@ -265,7 +264,7 @@ bool StartFight(Player& Youser, Monster& Enemy)
 				cout << "[사냥골드] : " << Enemy.Deposit << " G\n";
 				Youser.PlayerInformation.Deposit += Enemy.Deposit;
 
-				int ReWord = GetHuntReword();
+				const int ReWord = GetHuntReword();
 				PrintItemOption(ReWord);
 
 				break;
@@ -290,12 +289,12 @@ int GoToBattleFiled()
 	return bIsBattle;
 }
 
-void MonsterApear(Monster Enemy)
+void MonsterApear(const Monster Enemy)
 {
 	std::cout << "\n-----[" << Enemy.MonsterName << "]이(가) 출현하였습니다-----\n";
 }
 
-bool CheckPartyAllDead(Player* Party)
+bool CheckPartyAllDead(const Player* Party)
 {
 	int DeadWorial = 0;
 	
