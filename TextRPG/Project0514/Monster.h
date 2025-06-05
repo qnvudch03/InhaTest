@@ -1,16 +1,5 @@
 #pragma once
 
-struct Monster
-{
-	int HP = 0;
-	int DEF = 0;
-	int ATK = 0;
-	int Deposit = 0;
-	const char* MonsterName = nullptr;
-};
-
-
-
 enum MonsterClass
 {
 	Slime = 1,
@@ -19,5 +8,31 @@ enum MonsterClass
 	Dragon
 };
 
-Monster SpawnMonster();
-void ShowMonsterStat(Monster Enemy);
+class Monster
+{
+public:
+	int HP = 0;
+	int DEF = 0;
+	int ATK = 0;
+	int Deposit = 0;
+	const char* MonsterName = nullptr;
+
+public:
+	Monster SpawnMonster();
+	void ShowMonsterStat(Monster Enemy);
+};
+
+//struct Monster
+//{
+//	int HP = 0;
+//	int DEF = 0;
+//	int ATK = 0;
+//	int Deposit = 0;
+//	const char* MonsterName = nullptr;
+//};
+
+//Monster SpawnMonster();
+//void ShowMonsterStat(Monster Enemy);
+
+
+

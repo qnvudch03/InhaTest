@@ -12,11 +12,17 @@ using namespace std;
 #define YOUSER_NUMBER 3
 #define CLEARHEAPARRAYPTR(x) delete[] x; x = nullptr;
 
-bool StartFight(Player& Youser, Monster& Enemy);
+//bool StartFight(Player& Youser, Monster& Enemy);
+//int GoToBattleFiled();
+//void MonsterApear(const Monster Enemy);
+//bool CheckPartyAllDead(const Player* Party);
+//void LostMoeny(Player& Youser);
+
+bool StartFight(PlayerClass& Youser, Monster& Enemy);
 int GoToBattleFiled();
 void MonsterApear(const Monster Enemy);
-bool CheckPartyAllDead(const Player* Party);
-void LostMoeny(Player& Youser);
+bool CheckPartyAllDead(const PlayerClass* Party);
+void LostMoeny(PlayerClass& Youser);
 
 int main(void)
 {
@@ -33,10 +39,14 @@ int main(void)
 	//SetPlayerClass(Youser);
 
 	//다중 소환 후 게임플레이 버젼
-	Player Yousers[YOUSER_NUMBER] = {};
-	MakePlayerClass(Yousers, sizeof(Yousers) / sizeof(Player));
 
-	Player* Youser = Yousers;
+	//Player Yousers[YOUSER_NUMBER] = {};
+	//MakePlayerClass(Yousers, sizeof(Yousers) / sizeof(Player));
+
+	PlayerClass Yousers[YOUSER_NUMBER] = {};
+	Yousers->MakePlayerClass(Yousers, sizeof(Yousers) / sizeof(PlayerClass));
+
+	PlayerClass* Youser = Yousers;
 
 	while (true)
 	{
@@ -75,7 +85,7 @@ int main(void)
 				{
 					std::cout << "\n[난이도 : " << RandomMonsterNum << "]\n";
 
-					RandomEnemyArray[MonsterIndex] = SpawnMonster();
+					RandomEnemyArray[MonsterIndex] = RandomEnemyArray->SpawnMonster();
 					cout << "1. 싸운다.\n2. 도망간다.\n";
 
 					//bIsBattle = 0;
@@ -106,7 +116,7 @@ int main(void)
 						//다음 처치할 몬스터 생성
 						if (RandomEnemyArray[BattleCount].HP == 0)
 						{
-							RandomEnemyArray[BattleCount] = SpawnMonster();
+							RandomEnemyArray[BattleCount] = RandomEnemyArray->SpawnMonster();
 						}
 
 						//전투에서 생존시 다음전투로
@@ -172,7 +182,7 @@ int main(void)
 		else if (InSelectMenu == 2)
 		{
 			//SetPlayerClass(Youser);
-			Youser = SwitchPlayerClass(Yousers);
+			Youser = Youser->SwitchPlayerClass(Yousers);
 			system("cls");
 		}
 
@@ -185,7 +195,99 @@ int main(void)
 	cout << "\n----------End Game----------";
 }
 
-bool StartFight(Player& Youser, Monster& Enemy)
+//bool StartFight(Player& Youser, Monster& Enemy)
+//{
+//	int ChanceCount = 3;
+//	int MosterHP = Enemy.HP;
+//	int PlayerHP = Youser.PlayerInformation.CurrentHP;
+//	int UseItem = 1;
+//
+//	while (ChanceCount > 0)
+//	{
+//		//ChanceCount--;
+//
+//		cout << "\n공격 : ";
+//
+//		Sleep(1000);
+//
+//		std::random_device rd;
+//
+//		//공격에 성공했을 때!
+//		if ((rd() % 10) + 1 < Youser.Acurate)
+//		{
+//			int Damage = 0;
+//			float CriticlaChance = (rd() & 100) / 100.0f;
+//
+//			if (CriticlaChance < Youser.CriticalRate)
+//			{
+//				cout << "크리티컬 공격!\n";
+//
+//				Damage = Youser.Power * 2 - 0.5 * (Enemy.DEF);
+//
+//				MosterHP = MosterHP - Damage;
+//			}
+//
+//			else
+//			{
+//				cout << "보통 공격!\n";
+//
+//				Damage = Youser.Power - Enemy.DEF;
+//				MosterHP = MosterHP - Damage;
+//			}
+//
+//			MosterHP = (MosterHP < 0) ? 0 : MosterHP;
+//			cout << "[ " << Enemy.MonsterName << " HP : " << MosterHP << " ]\n";
+//
+//		}
+//		else
+//		{
+//			PlayerHP -= Enemy.ATK;
+//
+//			if (PlayerHP < 0)
+//				PlayerHP = 0;
+//
+//			cout << "실패!\n";
+//			cout << Enemy.MonsterName << "(의) 공격 : " << "- " << Enemy.ATK << '\n';
+//			cout << "[ " << Youser.ClassName << " HP : " << PlayerHP << " ]\n";
+//			cout << "[ " << Enemy.MonsterName << " HP : " << MosterHP << " ]\n";
+//		}
+//
+//		if (ChanceCount == 0 || MosterHP <= 0 || PlayerHP <= 0)
+//		{
+//			if (MosterHP > 0)
+//			{
+//				int OriginGold = Youser.PlayerInformation.Deposit;
+//				int CurrentGold = (OriginGold - Enemy.Deposit < 0) ? 0 : OriginGold - Enemy.Deposit;
+//				cout << "\n토벌 실패 : [ 잔여 몬스터 HP  " << MosterHP << "]" << "\n";
+//				cout << "[ 소지금  " << OriginGold << "  ->  " << CurrentGold << " ]\n";
+//				Youser.PlayerInformation.Deposit = CurrentGold;
+//				Youser.PlayerInformation.CurrentHP = 0;
+//				return false;
+//
+//				break;
+//			}
+//
+//			else
+//			{
+//				cout << "☆★토벌 성공!!★☆\n\n";
+//				cout << "[보상]\n";
+//				cout << "[사냥골드] : " << Enemy.Deposit << " G\n";
+//				Youser.PlayerInformation.Deposit += Enemy.Deposit;
+//
+//				const int ReWord = GetHuntReword();
+//				PrintItemOption(ReWord);
+//
+//				break;
+//			}
+//
+//		}
+//	}
+//
+//	return true;
+//}
+//
+//
+bool StartFight(PlayerClass& Youser, Monster& Enemy)
 {
 	int ChanceCount = 3;
 	int MosterHP = Enemy.HP;
@@ -276,8 +378,6 @@ bool StartFight(Player& Youser, Monster& Enemy)
 	return true;
 }
 
-
-
 int GoToBattleFiled()
 {
 	cout << "1. 싸운다.\n2. 도망간다.\n";
@@ -294,10 +394,26 @@ void MonsterApear(const Monster Enemy)
 	std::cout << "\n-----[" << Enemy.MonsterName << "]이(가) 출현하였습니다-----\n";
 }
 
-bool CheckPartyAllDead(const Player* Party)
+//bool CheckPartyAllDead(const Player* Party)
+//{
+//	int DeadWorial = 0;
+//	
+//	for (int WorialIndex = 0; WorialIndex < YOUSER_NUMBER; WorialIndex++)
+//	{
+//		if (Party->PlayerInformation.CurrentHP == 0)
+//		{
+//			DeadWorial++;
+//		}
+//
+//		Party++;
+//	}
+//
+//	return (DeadWorial == YOUSER_NUMBER) ? true : false;
+//}
+bool CheckPartyAllDead(const PlayerClass* Party)
 {
 	int DeadWorial = 0;
-	
+
 	for (int WorialIndex = 0; WorialIndex < YOUSER_NUMBER; WorialIndex++)
 	{
 		if (Party->PlayerInformation.CurrentHP == 0)
@@ -311,8 +427,16 @@ bool CheckPartyAllDead(const Player* Party)
 	return (DeadWorial == YOUSER_NUMBER) ? true : false;
 }
 
-void LostMoeny(Player& Youser)
+//void LostMoeny(Player& Youser)
+//{
+//	Youser.PlayerInformation.Deposit /= 2;
+//	std::cout << "[ " << Youser.ClassName << " ] 골드 소실!!\n";
+//}
+void LostMoeny(PlayerClass& Youser)
 {
 	Youser.PlayerInformation.Deposit /= 2;
 	std::cout << "[ " << Youser.ClassName << " ] 골드 소실!!\n";
 }
+
+//
+
