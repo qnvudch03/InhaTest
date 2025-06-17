@@ -1,0 +1,62 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\inha\\source\\repos\\0611-\uC790\uB8CC\uAD6C\uC870\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5CBF0F46-BFE4-4F07-8B2F-06E764D2E514}|Vector-studentmanager\\Vector-studentmanager.vcxproj|C:\\Users\\inha\\source\\repos\\0611-\uC790\uB8CC\uAD6C\uC870\\Vector-studentmanager\\5_\uC2E4\uC2B5_vector2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{5CBF0F46-BFE4-4F07-8B2F-06E764D2E514}|Vector-studentmanager\\Vector-studentmanager.vcxproj|solutionrelative:Vector-studentmanager\\5_\uC2E4\uC2B5_vector2.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2F495B69-CF7B-4AB7-9AE9-3EB046BFB3AE}|0611-\uC790\uB8CC\uAD6C\uC870\\0611-\uC790\uB8CC\uAD6C\uC870.vcxproj|C:\\Users\\inha\\source\\repos\\0611-\uC790\uB8CC\uAD6C\uC870\\0611-\uC790\uB8CC\uAD6C\uC870\\0611-\uC790\uB8CC\uAD6C\uC870.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2F495B69-CF7B-4AB7-9AE9-3EB046BFB3AE}|0611-\uC790\uB8CC\uAD6C\uC870\\0611-\uC790\uB8CC\uAD6C\uC870.vcxproj|solutionrelative:0611-\uC790\uB8CC\uAD6C\uC870\\0611-\uC790\uB8CC\uAD6C\uC870.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "0611-\uC790\uB8CC\uAD6C\uC870.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\0611-\uC790\uB8CC\uAD6C\uC870\\0611-\uC790\uB8CC\uAD6C\uC870\\0611-\uC790\uB8CC\uAD6C\uC870.cpp",
+              "RelativeDocumentMoniker": "0611-\uC790\uB8CC\uAD6C\uC870\\0611-\uC790\uB8CC\uAD6C\uC870.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\0611-\uC790\uB8CC\uAD6C\uC870\\0611-\uC790\uB8CC\uAD6C\uC870\\0611-\uC790\uB8CC\uAD6C\uC870.cpp",
+              "RelativeToolTip": "0611-\uC790\uB8CC\uAD6C\uC870\\0611-\uC790\uB8CC\uAD6C\uC870.cpp",
+              "ViewState": "AgIAAEUAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-11T07:09:58.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "5_\uC2E4\uC2B5_vector2.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\0611-\uC790\uB8CC\uAD6C\uC870\\Vector-studentmanager\\5_\uC2E4\uC2B5_vector2.cpp",
+              "RelativeDocumentMoniker": "Vector-studentmanager\\5_\uC2E4\uC2B5_vector2.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\0611-\uC790\uB8CC\uAD6C\uC870\\Vector-studentmanager\\5_\uC2E4\uC2B5_vector2.cpp",
+              "RelativeToolTip": "Vector-studentmanager\\5_\uC2E4\uC2B5_vector2.cpp",
+              "ViewState": "AgIAAKsAAAAAAAAAAAAAAKsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-11T06:52:30.653Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

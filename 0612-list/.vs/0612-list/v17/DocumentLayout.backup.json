@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\inha\\source\\repos\\0612-list\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E1A4E6BD-CE8C-49C2-BFDE-E2E2A543CE77}|containeradapter\\containeradapter.vcxproj|C:\\Users\\inha\\source\\repos\\0612-list\\containeradapter\\containeradapter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E1A4E6BD-CE8C-49C2-BFDE-E2E2A543CE77}|containeradapter\\containeradapter.vcxproj|solutionrelative:containeradapter\\containeradapter.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B6FF028F-D60E-4BCA-AF97-0284024426DA}|0612-list\\0612-list.vcxproj|C:\\Users\\inha\\source\\repos\\0612-list\\0612-list\\0612-list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{B6FF028F-D60E-4BCA-AF97-0284024426DA}|0612-list\\0612-list.vcxproj|solutionrelative:0612-list\\0612-list.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "containeradapter.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\0612-list\\containeradapter\\containeradapter.cpp",
+              "RelativeDocumentMoniker": "containeradapter\\containeradapter.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\0612-list\\containeradapter\\containeradapter.cpp",
+              "RelativeToolTip": "containeradapter\\containeradapter.cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-12T07:24:27.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "0612-list.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\0612-list\\0612-list\\0612-list.cpp",
+              "RelativeDocumentMoniker": "0612-list\\0612-list.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\0612-list\\0612-list\\0612-list.cpp",
+              "RelativeToolTip": "0612-list\\0612-list.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-12T01:09:35.853Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

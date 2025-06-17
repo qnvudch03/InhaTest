@@ -1,2 +1,14 @@
-﻿  PushPush.cpp
-  PushGame.vcxproj -> C:\Users\inha\source\repos\PushGame\x64\Debug\PushGame.exe
+﻿  Helper.cpp
+  Map.cpp
+  Player.cpp
+  PushPush.cpp
+  코드를 생성하고 있습니다...
+\Downloads\Map.cpp(1,1): error C1083: 소스 파일을 열 수 없습니다. '..\..\..\..\Downloads\Map.cpp': No such file or directory
+  (소스 파일 '/Downloads/Map.cpp'을(를) 컴파일하는 중)
+  
+\Downloads\Player.cpp(1,1): error C1083: 소스 파일을 열 수 없습니다. '..\..\..\..\Downloads\Player.cpp': No such file or directory
+  (소스 파일 '/Downloads/Player.cpp'을(를) 컴파일하는 중)
+  
+\Downloads\PushPush.cpp(1,1): error C1083: 소스 파일을 열 수 없습니다. '..\..\..\..\Downloads\PushPush.cpp': No such file or directory
+  (소스 파일 '/Downloads/PushPush.cpp'을(를) 컴파일하는 중)
+  

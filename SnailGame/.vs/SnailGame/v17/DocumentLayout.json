@@ -7,24 +7,16 @@
       "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\SnailGame.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Logic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Logic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Snail.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Snail.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Snail.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Snail.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Map.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Logic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Logic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Map.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\pch.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -35,8 +27,16 @@
       "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Helper.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Snail.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Snail.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Logic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Logic.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Logic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Logic.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Snail.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2D67EFFF-6C64-43D8-986C-30E82C0EF7A4}|SnailGame\\SnailGame.vcxproj|solutionrelative:SnailGame\\Snail.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,19 +58,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Snail.cpp",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Snail.cpp",
               "RelativeDocumentMoniker": "SnailGame\\Snail.cpp",
               "ToolTip": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Snail.cpp",
               "RelativeToolTip": "SnailGame\\Snail.cpp",
-              "ViewState": "AgIAACgAAAAAAAAAAAApwEIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-29T09:10:51.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Logic.cpp",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Logic.cpp",
               "RelativeDocumentMoniker": "SnailGame\\Logic.cpp",
@@ -82,7 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Logic.h",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Logic.h",
               "RelativeDocumentMoniker": "SnailGame\\Logic.h",
@@ -94,7 +94,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
               "Title": "Helper.h",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Helper.h",
               "RelativeDocumentMoniker": "SnailGame\\Helper.h",
@@ -106,7 +106,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "pch.h",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\pch.h",
               "RelativeDocumentMoniker": "SnailGame\\pch.h",
@@ -124,14 +124,14 @@
               "RelativeDocumentMoniker": "SnailGame\\SnailGame.cpp",
               "ToolTip": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\SnailGame.cpp",
               "RelativeToolTip": "SnailGame\\SnailGame.cpp",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAIwFUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAADEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-29T08:16:19.06Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Map.cpp",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Map.cpp",
               "RelativeDocumentMoniker": "SnailGame\\Map.cpp",
@@ -139,12 +139,11 @@
               "RelativeToolTip": "SnailGame\\Map.cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-05-30T01:52:48.405Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-30T01:52:48.405Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Snail.h",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Snail.h",
               "RelativeDocumentMoniker": "SnailGame\\Snail.h",
@@ -152,11 +151,12 @@
               "RelativeToolTip": "SnailGame\\Snail.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-29T09:09:59.529Z"
+              "WhenOpened": "2025-05-29T09:09:59.529Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "Map.h",
               "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\SnailGame\\SnailGame\\Map.h",
               "RelativeDocumentMoniker": "SnailGame\\Map.h",
@@ -164,7 +164,8 @@
               "RelativeToolTip": "SnailGame\\Map.h",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2025-05-30T01:53:21.519Z"
+              "WhenOpened": "2025-05-30T01:53:21.519Z",
+              "EditorCaption": ""
             }
           ]
         }
