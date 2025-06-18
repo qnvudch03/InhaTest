@@ -83,6 +83,7 @@ void Inventory::SellAllItem()
 
 		//¸Þ¸ô;?
 		//delete &CurrentItem;
+		delete CurrentItem.second;
 	}
 	MyInventory.clear();
 }
@@ -104,6 +105,7 @@ void Inventory::SellItem(int Index)
 		Iter->second->ItemCount--;
 	}
 
+	delete Iter->second;
 	MyInventory.erase(Iter);
 }
 
@@ -124,6 +126,7 @@ void Inventory::SellItemByGrade(ItemGrade Type)
 			Iter->second->ItemCount -= 1;
 		}
 
+		delete Iter->second;
 		Iter = MyInventory.erase(Iter);
 	}
 }

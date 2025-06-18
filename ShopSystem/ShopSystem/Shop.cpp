@@ -147,10 +147,9 @@ void Shop::RefreshAllItem()
 {
 	ItemIdVec.clear();
 
-	for (auto DeletedDat : _SellingItemData)
+	for (auto& DeletedDat : _SellingItemData)
 	{
-		//delete DeletedDat->ItemData;
-		//DeletedDat->ItemData = nullptr;
+		delete DeletedDat;
 	}
 
 	_SellingItemData.clear();
@@ -188,6 +187,7 @@ void Shop::RefreshItem()
 			int RandomIndex = (rd() % ItemIdVec.size());
 			ItemData* NewRandomItem = _shopData.find(ItemIdVec[RandomIndex])->second;
 
+			delete SelledItem;
 			SelledItem = new SellingItem(NewRandomItem);
 
 			//벡터인데, key 값을 통해서 값을 수정해야 한다.
