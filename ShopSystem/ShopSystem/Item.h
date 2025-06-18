@@ -31,3 +31,23 @@ public:
 
 	Color GetColor() const;
 };
+
+class SellingItem
+{
+public:
+
+	SellingItem(ItemData* InItemData) : ItemData(InItemData), ItemCount(1) {}
+
+	ItemData* ItemData;
+	int ItemCount;
+};
+
+class MyOwningItem
+{
+public:
+	MyOwningItem(ItemData* InItemData, int Speck) : ItemData(InItemData), ItemCount(1), ItemSpeck(Speck){}
+
+	ItemData* ItemData;
+	int ItemCount;
+	int ItemSpeck;
+};

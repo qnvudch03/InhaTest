@@ -2,6 +2,7 @@
 #include <iostream>
 #include <iomanip>
 #include "Helper.h"
+#include "MyHelper.h"
 
 using namespace std;
 
@@ -27,37 +28,102 @@ void Inventory::PrintInventory()
 	int InventoryIndex = 1;
 	for (auto& CurrentItem : MyInventory)
 	{
-		SetCursorPosition((START_INVEN_PAGE_X * 2)+4, InventoryIndex);
-		//CheckItemGrad2(CurrentItem);
-		std::cout << "[ " << InventoryIndex << " ]" << CurrentItem.Item->name;
+		SetCursorPosition((START_INVEN_PAGE_X * 2) + 4, InventoryIndex);
+		ChangItemGradFromGrad(CurrentItem.second->ItemData);
+		std::cout << "[ " << InventoryIndex << " ]" << CurrentItem.second->ItemData->name;
+
+		SetCursorPosition((START_INVEN_PAGE_X * 2) + 30, InventoryIndex);
+		std::cout<< CurrentItem.second->ItemCount;
+
+		SetCursorColor(Color::White);
+		SetCursorPosition((START_INVEN_PAGE_X * 2) + 40, InventoryIndex);
+
+		std::cout << CurrentItem.second->ItemData->price << "(" << CurrentItem.second->ItemSpeck << ")";
 		InventoryIndex++;
+
 	}
 }
 
 void Inventory::BuyItem(ItemData* Item)
 {
-	MyInventory.push_back(Item);
+
+	//Myinvectory.push_back(new ItemData(*Item));
+
+	//Key 값을 아이템 이름으로 받아서, 아이템 이름 기반 그로써리 카운트 늘리기
+	//근데 동일 아이템 이 들어오면 어떻하지??
+	//그럼 key 값이 ItemData이고, 매핑된 값이 카운트라면?
+
+	if (Item->type == ItemType::Grocery)
+	{
+		//이미 존재하는 물품인지 확인
+		if (MyInventory.find(Item->name) != MyInventory.end())
+		{
+			//있는거라면
+			MyInventory.find(Item->name)->second->ItemCount += 1;
+			_totalGold -= Item->price;
+			return;
+		}
+	}
+	//장비이거나, 새로운 그로써리 일 경우
+	MyInventory.insert(make_pair(Item->name, new MyOwningItem(Item, RandomRange(Item->minValue, Item->maxValue))));
+
 	_totalGold -= Item->price;
+	
 }
 
-void Inventory::SellItem(ItemData* Item)
+void Inventory::SellAllItem()
 {
+	for (auto& CurrentItem : MyInventory)
+	{
+		while (CurrentItem.second->ItemCount != 0)
+		{
+			_totalGold += CurrentItem.second->ItemData->price;
+			CurrentItem.second->ItemCount -= 1;
+		}
+
+		//메몰;?
+		//delete &CurrentItem;
+	}
+	MyInventory.clear();
 }
 
-void Inventory::CheckItemGrad2(std::pair<const int, ItemData*> iter)
+void Inventory::SellItem(int Index)
 {
-	if (iter.second->grade == ItemGrade::Normal)
+
+	if (Index > MyInventory.size())
+		return;
+
+	auto Iter = MyInventory.begin();
+
+	for (int i = 1; i < Index; i++)
+		Iter++;
+
+	while (Iter->second->ItemCount != 0)
 	{
-		SetCursorColor(Color::White);
+		_totalGold += Iter->second->ItemData->price;
+		Iter->second->ItemCount--;
 	}
 
-	else if (iter.second->grade == ItemGrade::Rare)
-	{
-		SetCursorColor(Color::SkyBlue);
-	}
+	MyInventory.erase(Iter);
+}
 
-	else if (iter.second->grade == ItemGrade::Legendary)
+void Inventory::SellItemByGrade(ItemGrade Type)
+{
+	auto Iter = MyInventory.begin();
+	for (Iter; Iter != MyInventory.end();)
 	{
-		SetCursorColor(Color::Red);
+		if (Iter->second->ItemData->grade != Type)
+		{
+			Iter++;
+			continue;
+		}
+
+		while (Iter->second->ItemCount != 0)
+		{
+			_totalGold += Iter->second->ItemData->price;
+			Iter->second->ItemCount -= 1;
+		}
+
+		Iter = MyInventory.erase(Iter);
 	}
 }

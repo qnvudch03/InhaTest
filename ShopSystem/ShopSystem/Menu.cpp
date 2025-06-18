@@ -106,9 +106,6 @@ void Menu::handleError(const std::string& msg)
 
 void Menu::handleShopMode(int input)
 {
-
-	auto iter = _shop->GetSellData().begin();
-
 	switch ((MENU_SHOP)input)
 	{
 	case MENU_SHOP::BuyItem:
@@ -119,17 +116,13 @@ void Menu::handleShopMode(int input)
 		cin >> selectIndex;
 
 		//@TODO 내용 채우기
+		SellingItem* SellectedItem = _shop->GetSellingItemData()[selectIndex - 1];
 
-		//구매 가능한지 확인
+		if (SellectedItem->ItemCount == 0 || SellectedItem->ItemData->price > _inventory->GetTotalGold())
+			break;
 
-		for (int i = 1; i < selectIndex; i++)
-			iter++;
-
-		if (_shop->ItemKeyAvailable.find(iter->first) != _shop->ItemKeyAvailable.end() && _inventory->GetTotalGold() >= iter->second->price)
-		{
-			_inventory->BuyItem(iter->second);
-			_shop->ItemKeyAvailable.erase(iter->first);
-		}
+		SellectedItem->ItemCount -= 1;
+		_inventory->BuyItem(SellectedItem->ItemData);
 
 	}break;
 	case MENU_SHOP::NewItem:
@@ -137,13 +130,14 @@ void Menu::handleShopMode(int input)
 		cout << "품절 목록을 새로운 아이템으로 채웁니다. " << endl;
 		
 		//@TODO 내용 채우기
+		_shop->RefreshItem();
 	}
 		break;
 	case MENU_SHOP::RefreshItem:
 	{
 		cout << "상점 목록을 새로고침 합니다. " << endl;
-		
 		//@TODO 내용 채우기
+		_shop->RefreshAllItem();
 	}break;
 	case MENU_SHOP::Exit:
 	{
@@ -164,10 +158,13 @@ void Menu::handleInvenMode(int input)
 		cin >> selectId;
 
 		//@TODO 내용 채우기
+		_inventory->SellItem(selectId);
+
 	}break;
 	case MENU_INVEN::AllSellItem:
 	{
 		//@TODO 내용 채우기
+		_inventory->SellAllItem();
 	}break;
 	case MENU_INVEN::SellItemByGrade:
 	{
@@ -177,6 +174,7 @@ void Menu::handleInvenMode(int input)
 		cin >> selectGrade;
 
 		//@TODO 내용 채우기
+		_inventory->SellItemByGrade((ItemGrade)selectGrade);
 	}break;
 	case MENU_INVEN::Exit:
 	{

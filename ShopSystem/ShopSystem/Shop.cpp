@@ -5,6 +5,7 @@
 #include <random>
 #include "Helper.h"
 #include "Item.h"
+#include "MyHelper.h"
 
 // C++ 20
 #include <format>
@@ -66,56 +67,33 @@ void Shop::LoadShopItemData()
 		}
 		
 		_shopData.insert(make_pair(shopData->id, shopData));
+
+		ItemIdVec.push_back(shopData->id);
 	}
 }
 
 void Shop::CreateRandomItem()
 {
 	//@TODO 내용 채우기
-	int RandomItemNumCount = RandomRange(MIN_SHOP_ITEM_COUNT, MAX_SHOP_ITEM_COUNT);
-
-	ItemKeyAvailable.clear();
-
-	_TempData = _shopData;
-
 	random_device rd;
 
-	//직접 접근이 불가능 하다. iteraor로써 접근해야 한다
-	for (int i = 0; i < RandomItemNumCount; i++)
+	int RandomCount = RandomRange(MIN_SHOP_ITEM_COUNT, MAX_SHOP_ITEM_COUNT);
+
+	for (int i = 0; i < RandomCount; i++)
 	{
-		auto iter = _TempData.begin();
-		int randomIndex = (rd() % _TempData.size());
+		int RandomIndex = (rd() % ItemIdVec.size());
+		int randomKeyvalue = ItemIdVec[RandomIndex];
 
-		for (int i = 0; i < randomIndex; i++)
-			iter++;
+		//SellingItem SellItem =  SellingItem(_shopData[randomKeyvalue]);
+		//메모리 누수???
+		SellingItem* SellItem = new SellingItem(_shopData[randomKeyvalue]);
+		_SellingItemData.push_back(SellItem);
 
-		_SellData.insert(*iter);
-		ItemKeyAvailable.insert(iter->first);
-
-		_TempData.erase(iter);
+		ItemIdVec.erase(ItemIdVec.begin() + RandomIndex);
 	}
-	_TempData.clear();
+
 }
 
-void Shop::CheckItemGrad(std::pair<const int, ItemData*> iter)
-{
-	if (iter.second->grade == ItemGrade::Normal)
-	{
-		SetCursorColor(Color::White);
-	}
-
-	else if (iter.second->grade == ItemGrade::Rare)
-	{
-		SetCursorColor(Color::SkyBlue);
-	}
-
-	else if (iter.second->grade == ItemGrade::Legendary)
-	{
-		SetCursorColor(Color::Red);
-	}
-
-
-}
 
 void Shop::PrintShop()
 {
@@ -139,27 +117,91 @@ void Shop::PrintShop()
 	//@TODO 아이템 목록 출력
 	int Linevertex = 1;
 	int Grad = -1;
-	for (auto iter : _SellData)
+	for (auto iter : _SellingItemData)
 	{
 		SetCursorPosition(2, Linevertex);
 
 		//색 바꿔줌
-		CheckItemGrad(iter);
+		ChangItemGradFromGrad(iter->ItemData);
+		_SellingItemData;
 
-		std::cout << "[ " << Linevertex << " ]" << iter.second->name;
-		
-		SetCursorPosition(MAX_SHOP_PAGE_X, Linevertex);
+		std::cout << "[ " << Linevertex << " ]" << iter->ItemData->name;
 
-		if (ItemKeyAvailable.find(iter.first) != ItemKeyAvailable.end())
-			std::cout << "1";
+		SetCursorPosition(MAX_SHOP_PAGE_X + 2, Linevertex);
+
+		if (iter->ItemCount != 0)
+			std::cout << iter->ItemCount;
 		else
 			std::cout << "품절";
 
 
 		SetCursorColor(Color::White);
-		SetCursorPosition(MAX_SHOP_PAGE_X + 5, Linevertex);
-		std::cout << iter.second->price << "(" << iter.second->minValue << " ~ " << iter.second->maxValue << ")";
+		SetCursorPosition(MAX_SHOP_PAGE_X + 7, Linevertex);
+		std::cout << iter->ItemData->price << "(" << iter->ItemData->minValue << " ~ " << iter->ItemData->maxValue << ")";
 		Linevertex++;
 	}
 	SetCursorColor(Color::White);
+}
+
+void Shop::RefreshAllItem()
+{
+	ItemIdVec.clear();
+
+	for (auto DeletedDat : _SellingItemData)
+	{
+		//delete DeletedDat->ItemData;
+		//DeletedDat->ItemData = nullptr;
+	}
+
+	_SellingItemData.clear();
+
+	//아이디 벡터 재 할당
+	for (auto& CurrentItemData : _shopData)
+	{
+		ItemIdVec.push_back(CurrentItemData.second->id);
+	}
+
+	CreateRandomItem();
+}
+
+void Shop::RefreshItem()
+{
+	//남은 아이템 리스트 중 아무거나 하나 집어서 넣어주자
+	random_device rd;
+	int indexCount = 0;
+
+	//if (ItemIdVec.size() == 0)
+	//{
+	//	return;
+	//}
+
+
+	for (auto& SelledItem : _SellingItemData)
+	{
+		if (SelledItem->ItemCount != 0) {}
+
+		else
+		{
+			if (ItemIdVec.size() == 0)
+				break;
+
+			int RandomIndex = (rd() % ItemIdVec.size());
+			ItemData* NewRandomItem = _shopData.find(ItemIdVec[RandomIndex])->second;
+
+			SelledItem = new SellingItem(NewRandomItem);
+
+			//벡터인데, key 값을 통해서 값을 수정해야 한다.
+			for (int i = 0; i < ItemIdVec.size(); i++)
+			{
+				if (ItemIdVec[i] != SelledItem->ItemData->id)
+					continue;
+
+				ItemIdVec.erase(ItemIdVec.begin() + i);
+				break;
+			}
+		}
+
+		indexCount++;
+		
+	}
 }
