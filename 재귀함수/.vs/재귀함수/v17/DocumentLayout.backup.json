@@ -1,0 +1,111 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E41E7A9F-CE9F-4DD0-AADC-DDCDDB9E39D2}|\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.vcxproj|C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E41E7A9F-CE9F-4DD0-AADC-DDCDDB9E39D2}|\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.vcxproj|solutionrelative:\uC7AC\uADC0\uD568\uC218\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E41E7A9F-CE9F-4DD0-AADC-DDCDDB9E39D2}|\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.vcxproj|C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E41E7A9F-CE9F-4DD0-AADC-DDCDDB9E39D2}|\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.vcxproj|solutionrelative:\uC7AC\uADC0\uD568\uC218\\FileName.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E41E7A9F-CE9F-4DD0-AADC-DDCDDB9E39D2}|\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.vcxproj|C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\tree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E41E7A9F-CE9F-4DD0-AADC-DDCDDB9E39D2}|\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.vcxproj|solutionrelative:\uC7AC\uADC0\uD568\uC218\\tree.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E41E7A9F-CE9F-4DD0-AADC-DDCDDB9E39D2}|\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.vcxproj|C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E41E7A9F-CE9F-4DD0-AADC-DDCDDB9E39D2}|\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.vcxproj|solutionrelative:\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E41E7A9F-CE9F-4DD0-AADC-DDCDDB9E39D2}|\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.vcxproj|C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\\uADF8\uB798\uD504.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E41E7A9F-CE9F-4DD0-AADC-DDCDDB9E39D2}|\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.vcxproj|solutionrelative:\uC7AC\uADC0\uD568\uC218\\\uADF8\uB798\uD504.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileName.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\FileName.cpp",
+              "RelativeDocumentMoniker": "\uC7AC\uADC0\uD568\uC218\\FileName.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\FileName.cpp",
+              "RelativeToolTip": "\uC7AC\uADC0\uD568\uC218\\FileName.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-19T09:49:00.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "test.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\test.cpp",
+              "RelativeDocumentMoniker": "\uC7AC\uADC0\uD568\uC218\\test.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\test.cpp",
+              "RelativeToolTip": "\uC7AC\uADC0\uD568\uC218\\test.cpp",
+              "ViewState": "AgIAACEAAAAAAAAAAAAgwCYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-19T08:08:12.511Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "\uADF8\uB798\uD504.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\\uADF8\uB798\uD504.cpp",
+              "RelativeDocumentMoniker": "\uC7AC\uADC0\uD568\uC218\\\uADF8\uB798\uD504.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\\uADF8\uB798\uD504.cpp",
+              "RelativeToolTip": "\uC7AC\uADC0\uD568\uC218\\\uADF8\uB798\uD504.cpp",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwBUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-19T06:24:04.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "tree.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\tree.cpp",
+              "RelativeDocumentMoniker": "\uC7AC\uADC0\uD568\uC218\\tree.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\tree.cpp",
+              "RelativeToolTip": "\uC7AC\uADC0\uD568\uC218\\tree.cpp",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAEwAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-19T02:55:27.809Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "\uC7AC\uADC0\uD568\uC218.cpp",
+              "DocumentMoniker": "C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.cpp",
+              "RelativeDocumentMoniker": "\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.cpp",
+              "ToolTip": "C:\\Users\\inha\\source\\repos\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.cpp",
+              "RelativeToolTip": "\uC7AC\uADC0\uD568\uC218\\\uC7AC\uADC0\uD568\uC218.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-06-19T02:13:25.665Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
