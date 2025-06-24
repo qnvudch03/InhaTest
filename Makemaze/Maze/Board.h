@@ -1,7 +1,7 @@
 #pragma once
 
 // #define 
-constexpr int BOARD_SIZE = 25;	// 미로 크기. 반드시 홀수 개수여야함.
+constexpr int BOARD_SIZE = 49;	// 미로 크기. 반드시 홀수 개수여야함.
 
 // 벽 or 빈 공간 타입
 enum class TileType

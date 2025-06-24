@@ -359,12 +359,14 @@ void Player::Calculate_Dijkstra()
 	std::stack<Pos> ResultStack;
 
 	int Cost = 0;
+	int Count = 0;
 	ToDoQueue.push(Pos2{ _pos, _pos, 0 });
 	
 	CostVector.push_back(Pos2{ _pos, _pos, 0});
 
 	while (!ToDoQueue.empty())
 	{
+		
 		Pos2 CurrentPos = ToDoQueue.front();
 		bAvailable[CurrentPos.MyPos.y][CurrentPos.MyPos.x] = false;
 		ToDoQueue.pop();
@@ -375,8 +377,12 @@ void Player::Calculate_Dijkstra()
 			break;
 		}
 
-		for (int i = 0; i < (int)MoveDir::MOVE_MAX; i++)
+		//같은 코스트 일 경우, 평지를 우선 탐색하기 위해서 아래와 같이 반복문 수정
+		//먼저 돌드라
+		//
+		for (int i = (int)MoveDir::MOVE_MAX-1; i >= 0; i--)
 		{
+			Count++;
 			Pos NextPos = CurrentPos.MyPos + delta[i];
 
 			//찾았다!
@@ -429,6 +435,140 @@ void Player::Calculate_Dijkstra()
 		ResultStack.pop();
 	}
 
+}
+
+void Player::Calculate_Dijkstra2()
+{
+
+}
+
+void Player::Calculate_AStart()
+{
+	Pos End = _board->GetDest();
+	struct ANode
+	{
+		Pos Position = Pos{ 0, 0 };
+		double Cost = 0.0;
+		double Offset = 0.0;
+
+		bool operator>(const ANode& other) const
+		{
+			if (other.Cost + other.Offset != Cost + Offset)
+				return other.Cost + other.Offset < Cost + Offset;
+
+			else
+				return other.Cost < Cost;
+		}
+	};
+
+	struct ParentInfo
+	{
+		Pos Parent = Pos{ 0, 0 };;
+		double Cost = 0.0;
+	};
+
+	std::vector<std::vector<bool>> bAvailable(BOARD_SIZE, std::vector<bool>(BOARD_SIZE));
+	std::priority_queue<ANode, std::vector<ANode>, std::greater<ANode>> pq;
+
+	for (int y = 0; y < BOARD_SIZE; ++y)
+	{
+		for (int x = 0; x < BOARD_SIZE; ++x)
+		{
+			if (_board->GetTileType(Pos{ x,y }) == TileType::EMPTY)
+				bAvailable[y][x] = true;
+		}
+	}
+
+	
+
+	std::map<Pos, ParentInfo> CostMap;
+	CostMap.insert(std::make_pair(_pos, ParentInfo{_pos, 0.0}));
+	pq.push(ANode{_pos, 0, GetOffsetValue(_pos, End)});
+
+	int count = 0;
+	while (!pq.empty())
+	{
+		ANode CurrentNode = pq.top();
+		bAvailable[CurrentNode.Position.y][CurrentNode.Position.x] = false;
+		pq.pop();
+
+		Pos CurrentPos = CurrentNode.Position;
+
+		if (CurrentPos == End)
+		{
+			break;
+		}
+			
+
+		for (int i = 0; i < (int)MoveDir::MOVE_MAX; i++)
+		{
+			count++;
+			Pos NextPos = CurrentPos + delta[i];
+
+			//NexPos가 이용 가능하다면
+			if (bAvailable[NextPos.y][NextPos.x])
+			{
+				{
+					double NewCost = (i <= 3) ? CurrentNode.Cost + 1 : CurrentNode.Cost + 1.4;
+					ANode NewANode{ NextPos, NewCost, GetOffsetValue(NextPos, End)};
+
+					//맵에 등록 안된 새삥이다
+					if (CostMap.find(NextPos) == CostMap.end())
+					{
+						CostMap[NextPos] = ParentInfo{ CurrentPos ,NewANode.Cost  };
+						pq.push(NewANode);
+					}
+
+					/*else
+					{
+						if (NewANode.Cost < CostMap[NextPos].Cost)
+							CostMap[NextPos].Cost = NewANode.Cost;
+					}*/
+				}
+
+			}
+		}
+	}
+
+
+	double LeastCost = INT_MAX;
+	std::stack<Pos> ResultStack;
+	Pos ParentPos = End;
+	auto Iter = CostMap.end();
+	Iter--;
+
+	while (true)
+	{
+		if (Iter->second.Cost < LeastCost)
+		{
+			if (Iter->first.x == ParentPos.x && Iter->first.y == ParentPos.y)
+			{
+				LeastCost = Iter->second.Cost;
+				//_path.push_back(Iter->first);
+				ResultStack.push(Iter->first);
+				ParentPos = Iter->second.Parent;
+			}
+			
+		}
+		Iter = CostMap.erase(Iter);
+
+		if (CostMap.empty())
+			break;
+		Iter--;
+
+	}
+
+	while (!ResultStack.empty())
+	{
+		Pos Path = ResultStack.top();
+		ResultStack.pop();
+		_path.push_back(Path);
+	}
+}
+
+double Player::GetOffsetValue(Pos Position, Pos End)
+{
+	return (abs(End.x - Position.x) + abs(End.y - Position.y) * 2);
 }
 
 void Player::MoveToDir()

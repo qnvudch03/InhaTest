@@ -40,6 +40,11 @@ public:
 
 	//Dijkstra
 	void Calculate_Dijkstra();
+	void Calculate_Dijkstra2();
+
+	//AStart
+	void Calculate_AStart();
+	double GetOffsetValue(Pos Position, Pos End);
 
 	// 현재 위치
 	Pos _pos = Pos(1,1);

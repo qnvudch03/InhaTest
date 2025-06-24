@@ -34,7 +34,9 @@ int main()
 
 	//player.Calculate_BFS();
 
-	player.Calculate_Dijkstra();
+	//player.Calculate_Dijkstra();
+	//player.Calculate_Dijkstra2();
+	player.Calculate_AStart();
 
 
 
