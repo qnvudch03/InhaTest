@@ -10,7 +10,13 @@ public:
 		Pos(-1, 0),	// 왼쪽
 		Pos(1, 0),	// 오른쪽
 		Pos(0, -1), // 위쪽
-		Pos(0, 1)  // 아래쪽
+		Pos(0, 1),  // 아래쪽
+
+		Pos(-1, -1), //좌상단
+		Pos(1, -1), //우상단
+		Pos(-1, 1), //좌하단
+		Pos(1, 1) //우하단
+
 	};
 
 
@@ -27,6 +33,13 @@ public:
 	void Calculate_DFS();
 	void CheckLextPosition(Pos InPos, std::vector<std::vector<bool>>& AvailableList);
 	bool bIsFinishe = false;
+
+
+	//BFS
+	void Calculate_BFS();
+
+	//Dijkstra
+	void Calculate_Dijkstra();
 
 	// 현재 위치
 	Pos _pos = Pos(1,1);

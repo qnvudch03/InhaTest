@@ -26,7 +26,17 @@ int main()
 	//player._path.push_back(Pos(3, 4));
 
 	//player.Calculate_RightHand();
-	player.Calculate_DFS();
+
+	//임시 맵 그리기
+	board.PrintMap();
+
+	//player.Calculate_DFS();
+
+	//player.Calculate_BFS();
+
+	player.Calculate_Dijkstra();
+
+
 
 	while (true)
 	{

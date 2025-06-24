@@ -15,6 +15,11 @@ enum class MoveDir
 	MOVE_RIGHT,
 	MOVE_UP,
 	MOVE_DOWN,
+
+	MOVE_LEFT_UP,
+	MOVE_RIGHT_UP,
+	MOVE_LEFT_DOWN,
+	MOVE_RIGHT_DOWN,
 	MOVE_MAX,
 };
 
@@ -62,6 +67,13 @@ struct Pos
 	bool operator!=(const Pos& other)
 	{
 		return !(*this == other);
+	}
+
+	bool operator<(const Pos& other) const
+	{
+		if (y != other.y)
+			return y < other.y;
+		return x < other.x;
 	}
 };
 
